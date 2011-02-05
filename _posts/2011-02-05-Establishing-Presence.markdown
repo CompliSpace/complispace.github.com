@@ -1,4 +1,8 @@
-# Establishing Presence
+---
+layout: default
+title: Establishing Presence
+---
+
 CompliSpace Development is in the process of establishing
 it's presence on GitHub. Thank you for your patience.
 
