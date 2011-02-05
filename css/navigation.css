@@ -1,0 +1,114 @@
+@CHARSET "UTF-8";
+
+#primaryNavigation {
+	text-transform: uppercase;
+	font-size: 90%;
+}
+
+#primaryNavigation ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+#primaryNavigation li {
+	list-style: none;
+	float: left;
+	margin: 0 .15em;
+
+
+}
+
+#primaryNavigation li a
+{
+	/*background: url(background.gif) #fff bottom left repeat-x*/;
+	height: 2em;
+	line-height: 2em;
+	float: left;
+	width: 9em;
+	display: block;
+	border: 0.1em solid #dcdce9;
+	border-top: none;
+	color: #009BEA;
+	text-align: center;
+	text-decoration: none;
+
+	background-color: #e8e8e8;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, .8)), color-stop(.3, rgba(255,255,255, .5)), color-stop(.6, rgba(255,255,255, .3)), color-stop(.6, transparent), to(transparent) );
+    background-image: -moz-linear-gradient( top, rgba(255, 255, 255, .8), rgba(255, 255, 255, .5) 30%, rgba(255, 255, 255, .3) 60%, transparent 60%, transparent );
+}
+
+#primaryNavigation li a:hover {
+	text-decoration: underline;
+	background-color: #009BEA;
+	color: #ffffff;
+}
+
+
+#primaryNavigation li.navigation-selected a {
+	color: #ffffff;
+	background-color: #000000;
+}
+
+
+#secondaryNavigation ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+#secondaryNavigation li {
+	list-style: none;
+	float: left;
+	margin-right: 1em;
+	padding: .2em 0;
+}
+
+#secondaryNavigation a {
+	/*color: #0d2474;*/
+	color: #008F2E;
+	text-decoration: none;
+}
+
+#secondaryNavigation a:hover {
+	text-decoration: underline;
+}
+
+#breadcrumbNavigation { display: none; }
+
+#breadcrumbNavigation, #breadcrumbNavigation a {
+	font-size: 85%;
+	background-color: #d8d8d8;
+	color: black;
+	text-shadow: white 0 1px 0;
+	text-decoration: none;
+}
+
+#breadcrumbNavigation li:hover a{
+	text-decoration: underline;
+}
+
+#breadcrumbNavigation ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+#breadcrumbNavigation li {
+	list-style: none;
+	float: left;
+	margin: 0 .15em;
+	
+
+}
+
+#userNavigation {
+	font-size: 80%;
+	padding-top:2px;
+	font-weight: bold;
+}
+
+#userNavigation a {
+	color: #008F2E;
+}
+
+#userNavigation img {
+	vertical-align: middle;	
+}

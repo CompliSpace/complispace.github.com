@@ -1,0 +1,65 @@
+@CHARSET "UTF-8";
+
+body {
+	background: url(/images/CompliSpace_background.jpg) repeat-x;
+	color: #454545;
+	font-size: 120%;
+}
+
+a {
+	color: #009BEA;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color:   #009BEA;
+}
+
+#hd,#primaryNavigation,#secondaryNavigation,#bd,#breadcrumbNavigation,#ft {
+	width: 966px;
+	margin: auto;
+}
+
+#primaryNavigation,#secondaryNavigation {
+	clear: both;
+}
+
+#hd {
+	height: 100px;
+	background: url(/images/CompliSpace_logo.png) no-repeat;
+	text-align: right;
+}
+
+#hd h1 {
+	display:none;
+}
+
+#hd h2 {
+	position: relative;
+	top:35px;
+	/*left: 360px;*/	
+}
+
+#masthead {
+	float:left;	
+}
+
+
+
+#bd {
+	/*border: 1px solid gray;*/
+	clear:left;
+	padding-bottom: 1em;
+}
+
+/*
+    Set the background-color for an element and then add the 'shinyGradient'
+    class to the element for a glassy shine.
+    Source: https://gist.github.com/728744
+*/
+.shinyGradient {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, .8)), color-stop(.3, rgba(255,255,255, .5)), color-stop(.6, rgba(255,255,255, .3)), color-stop(.6, transparent), to(transparent) );
+    background-image: -moz-linear-gradient( top, rgba(255, 255, 255, .8), rgba(255, 255, 255, .5) 30%, rgba(255, 255, 255, .3) 60%, transparent 60%, transparent );
+}
+
+#primaryNavigation, #userNavigation, #secondaryNavigation, breadcrumbNavigation {
+	display:none;
