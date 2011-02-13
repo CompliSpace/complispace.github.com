@@ -1,4 +1,7 @@
-#February Fundamentals Updates
+---
+layout: default
+title: February Fundamentals Updates
+---
 
 ##Schedule
 February rollouts will commence from Tuesday 22nd February and conclude 
