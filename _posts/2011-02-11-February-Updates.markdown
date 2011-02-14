@@ -20,7 +20,7 @@ This has already been rolled out as a patch but is included in this release for
  these are options when printing and depends on the end users browser 
  and operating system.
 
-###Issue #170 - Complaints search dates where broken
+###Issue #170 - Complaints search dates were broken
 The date field in the complaints search was completely broken. Obviously this 
 custom app isn't being used much since this was found as part of investigating
  Issue #135.
