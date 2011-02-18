@@ -44,7 +44,7 @@ however the content of the PDF files will not be searchable.
 
 ###Issue #144 - 'Hiding' Subscribed to Mailing List in all sites
 The user details screen available to administrators 
-(Komodo Bar->User->Search->[find user]->Details) had a field for subscribing
+(Komodo Bar->User->Search->*find user*->Details) had a field for subscribing
 to the mailing list. This is something used by Komosion on their own hosted
 websites. This data was stored in the database but not accessible by
 Komosion. It is not used by CompliSpace so it is now hidden to avoid
