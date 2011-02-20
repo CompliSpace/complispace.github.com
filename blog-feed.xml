@@ -11,6 +11,7 @@
 				<title>{{ post.title }}</title>
 				<description>{{ post.content | xml_escape }}</description>
 				<link>http://complispace.github.com{{ post.url }}</link>
+				<pubDate>{{ post.date | date: "%a, %d %B %Y 09:00:00 GMT+10" }}</pubDate>
 			</item>
 		{% endfor %}
 	</channel>
