@@ -352,6 +352,12 @@ footer pre {
 	float: right;
 }
 
+.note {
+    background-color: #FFFFBB;
+    border: 1px dashed gray;
+    padding: .5em;
+}
+
 /*
  * Media queries for responsive design
  * These follow after primary styles so they will successfully override. 

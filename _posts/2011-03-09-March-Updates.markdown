@@ -11,6 +11,11 @@ has unexpected behaviour, be sure to have them [clear their cache][Clear Cache].
 ##Change Log
 This month there are 5 specific issues that will be rolled out.
 
+***Update: Issue 209 added to this release. Please see the [March
+   Fundamentals Updates -
+   Addendum](/2011/03/14/March-Updates-Addendum.html) post for more
+   information. This will make 6 issues in this update.***
+
 ###Issue 186 - Form Builder Submission Data Working As Expected
 Under some conditions form builder submissions were not saving to
 the database. This has been addressed.
