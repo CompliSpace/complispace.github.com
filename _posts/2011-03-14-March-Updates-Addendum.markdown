@@ -22,7 +22,7 @@ alt="Alternative Browser Alliance" width="110" height="32" /></a>
 </div>
 <div style="padding-left: 115px">
 <p>
-It is highly recommended that Internet Explorer user upgrade to a web
+It is highly recommended that Internet Explorer users upgrade to a web
 browser that complies better with modern web standards. A list of
 browsers can be found at the <a
 href="http://alternativebrowseralliance.com/browsers.html">Alternative
@@ -38,7 +38,7 @@ width="110"/>
 </div>
 <div>
 <p>
-If you must use Internet Explorer for use with legacy applications, we
+If you must use Internet Explorer for compatability with legacy applications, we
 recommend installing the <a href="http://www.google.com/chromeframe/index.html">Google Chrome Frame plugin</a>. This will allow
 you to continue using Internet Explorer on you legacy applications,
 while using the Chrome rendering engine on modern sites.
