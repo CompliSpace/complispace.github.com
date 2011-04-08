@@ -260,7 +260,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
 }
  
 #masthead {
@@ -357,6 +358,17 @@ footer pre {
     border: 1px dashed gray;
     padding: .5em;
 }
+
+code {
+    border: 1px dotted gray;
+    background-color: #FFFFBB;
+}
+
+pre code {
+    border: none;
+}
+
+
 
 /*
  * Media queries for responsive design
