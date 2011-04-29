@@ -16,8 +16,7 @@ internal systems that they would like to seamlessly link to CompliSpace
 Fundamentals.
 
 
-###Issue 210 - Under certain conditions an error occurs when uploading a file to 
-the File Library (can not create asset folder - already exists)
+###Issue 210 - Under certain conditions an error occurs when uploading a file
 After clients have requested or required database rollbacks some sites were not 
 able to upload new files. This has been addressed.
 
