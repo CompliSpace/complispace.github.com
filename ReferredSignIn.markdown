@@ -4,25 +4,32 @@ title: CompliSpace Fundamentals Referred Sign In
 ---
 
 ##Introduction
-For better integration into existing client sites, CompliSpace is currently investigating simplified methods for signing in to Fundamentals sites.
+For better integration into existing client sites, CompliSpace has implemented a 
+simplified method for signing in to Fundamentals sites.
 
-This is accomplished by allowing an organisation's internal sites to generate signed links that signify to Fundamentals that the user is already trusted by the referring site.
+This is accomplished by allowing an organisation's internal sites to generate 
+signed links that signify to Fundamentals that the user is already trusted by 
+the referring site.
 
-It is expected that this functionality will be rolled out to all Fundamentals customers in the near future. If you are interested in this feature and would like a pre-trial, please contact <development@complispace.net>.
+A helper class written in [PHP](http://www.php.net) is available on 
+[GitHub](https://github.com/CompliSpace) as [GIST 907000](https://gist.github.com/907000).
 
-A helper class written in [PHP](http://www.php.net) is available on [GitHub](https://github.com/CompliSpace) as [GIST 907000](https://gist.github.com/907000).
+##Implementation
+The implementation consists of appending several `GET` request parameters that 
+are signed by a secret key.
 
-##Proposed Prototype Implementation
-The prototype currently in use consists of appending several `GET` request parameters that are signed by a secret key.
+If you would like to use this feature, please contact CompliSpace and request
+a <mark>Referred Sign In Private Key</mark>.
 
-
-
-To use the referred login mechanism for CompliSpace Fundamentals, simply link to the regular page you want people to view (eg, <http://xyz.complispace.com.au/HRAdministrationManagersOnly>) and append the following `GET` parameters:
+To use the referred login mechanism for CompliSpace Fundamentals, simply link to 
+the regular page you want people to view 
+(eg, <http://xyz.complispace.com.au/HRAdministrationManagersOnly>) and append 
+the following `GET` parameters:
 
 <pre class="note"><code>referredUserLogin=&lt;login username&gt;
-referredExpires=&lt;unix epoch timestamp, must be no greater than 6 hours in the future&gt;
-referredAccessKeyId=&lt;your sites key id&gt;
-referredSignature=&lt;base 64 encoded calculated signature of the request&gt;
+referredExpires=&lt;unix epoch timestamp, must be no greater than 6 hours in the 
+future&gt;referredAccessKeyId=&lt;your sites key id&gt;referredSignature=&lt;
+base 64 encoded calculated signature of the request&gt;
 </code></pre>
 
 
