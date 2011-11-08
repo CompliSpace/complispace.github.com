@@ -1,6 +1,9 @@
 ---
 layout: default
 title: March Fundamentals Updates - Addendum
+categories:
+    - Update
+
 ---
 
 ##Change Log

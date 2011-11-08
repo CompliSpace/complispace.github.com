@@ -1,6 +1,9 @@
 ---
 layout: default
 title: March Fundamentals Updates
+categories:
+    - Update
+
 ---
 
 ##Schedule

@@ -1,6 +1,9 @@
 ---
 layout: default
 title: February Fundamentals Updates
+categories:
+    - Update
+
 ---
 
 ##Schedule

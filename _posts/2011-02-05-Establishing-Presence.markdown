@@ -1,7 +1,12 @@
 ---
 layout: default
 title: Establishing Presence
+categories:
+    - Article
+
 ---
+
+<em><time datetime="{{post.date | date: "%Y-%m-%d" }}" pubdate>Posted on {{post.date | date_to_long_string }}</time></em>
 
 CompliSpace Development is in the process of establishing it's
 [presence on GitHub](https://github.com/complispace).

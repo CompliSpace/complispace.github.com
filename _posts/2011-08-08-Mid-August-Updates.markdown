@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Mid August Fundamentals Updates
+categories:
+    - Update
+
 ---
 
 ##Schedule

@@ -1,6 +1,9 @@
 ---
 layout: default
 title: September Maintenance
+categories:
+    - Update
+
 ---
 
 ##Schedule

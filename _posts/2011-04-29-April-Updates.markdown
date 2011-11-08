@@ -1,6 +1,9 @@
 ---
 layout: default
 title: April Fundamentals Updates
+categories:
+    - Update
+
 ---
 
 ##Schedule

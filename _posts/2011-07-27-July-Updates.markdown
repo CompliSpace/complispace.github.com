@@ -1,6 +1,9 @@
 ---
 layout: default
 title: July Fundamentals Updates
+categories:
+    - Update
+
 ---
 
 ##Schedule
