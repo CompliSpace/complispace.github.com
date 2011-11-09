@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Why Information Security Is Important
 categories:
     - Article

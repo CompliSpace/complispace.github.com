@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: September Maintenance
 categories:
     - Update

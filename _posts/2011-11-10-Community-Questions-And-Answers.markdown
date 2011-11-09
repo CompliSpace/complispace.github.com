@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Community Driven "Questions To Answers"
 categories:
     - Article

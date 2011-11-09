@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: July Fundamentals Updates
 categories:
     - Update

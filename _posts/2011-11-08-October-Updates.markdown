@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: October Fundamentals Updates
 categories:
     - Update

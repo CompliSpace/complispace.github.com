@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: April Fundamentals Updates
 categories:
     - Update
