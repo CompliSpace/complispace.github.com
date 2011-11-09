@@ -7,6 +7,9 @@
 
 
 
+//$('[title]').tooltip({
+//    effect:'fade'
+//});
 
 
 

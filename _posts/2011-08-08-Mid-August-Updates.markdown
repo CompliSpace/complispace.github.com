@@ -1,6 +1,9 @@
 ---
-layout: default
+layout: post
 title: Mid August Fundamentals Updates
+categories:
+    - Update
+
 ---
 
 ##Schedule

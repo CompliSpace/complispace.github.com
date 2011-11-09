@@ -1,6 +1,9 @@
 ---
-layout: default
+layout: post
 title: April Fundamentals Updates Complete
+categories:
+    - Update
+
 ---
 
 ##Status

@@ -1,6 +1,9 @@
 ---
-layout: default
+layout: post
 title: February Fundamentals Updates
+categories:
+    - Update
+
 ---
 
 ##Schedule

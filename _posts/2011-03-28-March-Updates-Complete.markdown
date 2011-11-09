@@ -1,6 +1,9 @@
 ---
-layout: default
+layout: post
 title: March Fundamentals Updates Complete
+categories:
+    - Update
+
 ---
 
 ##Status

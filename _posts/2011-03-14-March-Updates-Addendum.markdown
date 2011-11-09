@@ -1,6 +1,9 @@
 ---
-layout: default
+layout: post
 title: March Fundamentals Updates - Addendum
+categories:
+    - Update
+
 ---
 
 ##Change Log

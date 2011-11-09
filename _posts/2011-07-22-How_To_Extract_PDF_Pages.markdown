@@ -1,6 +1,10 @@
 ---
-layout: default
+layout: post
 title: How To Create a New PDF Using Selected Pages From an Already Existing PDF (using a Mac)
+categories:
+    - Article
+    - Screen Cast
+
 ---
 
 

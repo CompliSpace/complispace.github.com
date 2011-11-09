@@ -1,6 +1,9 @@
 ---
-layout: default
+layout: post
 title: May Fundamentals Updates
+categories:
+    - Update
+
 ---
 
 ##Schedule
