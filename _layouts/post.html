@@ -1,0 +1,11 @@
+{% include prefix.html %}
+
+<article>
+<h1><a href="{{page.url}}">{{page.title}}</a></h1>
+<em><time datetime="{{page.date | date: "%Y-%m-%d" }}" pubdate>Posted on {{page.date | date_to_long_string }}</time></em>
+
+{{content}}
+
+</article>
+
+{% include suffix.html %}
