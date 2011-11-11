@@ -226,6 +226,17 @@ body {
  /* Primary Styles
     Author: 
  */
+ 
+ @font-face {  
+    font-family: handsean ;  
+    src: url(/fonts/handsean.ttf) format("truetype");  
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: handsean; 
+}
+
+
 h1 {
 	/*18px via YUI Fonts CSS foundation*/
 	font-size:138.5%;
