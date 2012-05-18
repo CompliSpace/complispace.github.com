@@ -25,7 +25,7 @@ The appropriate label will be applied for 2 weeks after the page is published.
 Previously the automated email sent to a user when assigned a test had a link to
 the Tests Assigned page. It now also includes a link to the training room with the text:
 
-<div style="border: 1px dashed gray; padding: 1em;">
+<div class="alert alert-info">
 For more information on this topic, please visit the <strong>training room</strong>.
 </div>
 

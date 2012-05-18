@@ -18,7 +18,7 @@ Total storage is 5G, but this is a soft limit. No customer has yet reached this 
 
 ##File Types
 
-<table width="100%">
+<table class="table-striped table-bordered"  >
 <tr>
 <th>File Family</th><th>Extension</th><th>Type</th>
 </tr><tr>

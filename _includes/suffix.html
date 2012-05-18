@@ -1,103 +1,75 @@
-            </div>
-        </div>
-        <div id="flourish" class="grid_6">
-            <div id="flourish_overlay" >
-                
-<script src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 30000,
-  width: 225,
-  height: 249,
-  theme: {
-    shell: {
-      background: '#333333',
-      color: '#ffffff'
-    },
-    tweets: {
-      background: '#000000',
-      color: '#ffffff',
-      links: '#ffc400'
-    }
-  },
-  features: {
-    scrollbar: true,
-    loop: false,
-    live: true,
-    behavior: 'all'
-  }
-}).render().setUser('alchemycs').start();
-</script>
-            </div>
-            <div style="position: absolute;top: 640px" class="grid_6">
-            </div>
-        </div>
-    <div class="clear"></div>
-    </section>
+            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
     <footer >
-        <div id="social_links" class="grid_6" style="">
-            <nav>
-                <ul>
-<!--                    <li><a href="http://twitter.com/CompliSpace/"><img src="/images/sm/twitter.png"/> Twitter</a></li>-->
+        <div class="row-fluid">
+            <div class="span4">
+                <ul class="unstyled">
+    <!--                    <li><a href="http://twitter.com/CompliSpace/"><img src="/images/sm/twitter.png"/> Twitter</a></li>-->
                     <li><a href="http://twitter.com/AlchemyCS/"><img src="/images/sm/twitter.png" alt="Twitter:"/> @AlchemyCS</a></li>
-<!--                    <li><a href="http://complispace.wordpress.com/"><img src="/images/sm/wordpress-blue.png"/> Wordpress</a></li>-->
-<!--                    <li><a href="http://www.linkedin.com/company/494386"><img src="/images/sm/linkedin.png"/> LinkedIN</a></li>-->
+    <!--                    <li><a href="http://complispace.wordpress.com/"><img src="/images/sm/wordpress-blue.png"/> Wordpress</a></li>-->
+    <!--                    <li><a href="http://www.linkedin.com/company/494386"><img src="/images/sm/linkedin.png"/> LinkedIN</a></li>-->
                     <li><a href="http://www.linkedin.com/in/mrmchugh"><img src="/images/sm/linkedin.png" alt="LinkedIN: "/> LinkedIN</a></li>
                     <li><a href="mailto:&#100;&#101;&#118;&#101;&#108;&#111;&#112;&#101;&#114;&#064;&#099;&#111;&#109;&#112;&#108;&#105;&#115;&#112;&#097;&#099;&#101;&#046;&#110;&#101;&#116;"><img src="/images/sm/email.png" alt="email: " >&#100;&#101;&#118;&#101;&#108;&#111;&#112;&#101;&#114;&#064;&#099;&#111;&#109;&#112;&#108;&#105;&#115;&#112;&#097;&#099;&#101;&#046;&#110;&#101;&#116;</a></li>
                 </ul>
-            </nav>
+            </div>
+            <div class="span4" style="">            
+                <address>
+                    <strong>Sydney</strong><br/>
+                    Level 1<br/>
+                    191 Clarence Street<br/>
+                    Sydney NSW 2000<br/>
+                    <br/>
+                    t: +61 2 9299 6105<br/>
+                    f: +61 2 9299 2805
+                </address>
+            </div>
+            <div class="span4" style="">
+                <address>
+                    <strong>Perth</strong><br/>
+                    Level 18, Central Park<br/>
+                    152-158 St Georges Terrace<br/>
+                    Perth WA 6000<br/>
+                    <br/>
+                    t: +61 8 9288 1826<br/>
+                    f: +61 8 9288 1827
+                </address>
+            </div>
         </div>
-        <div id="sydney_contact" class="grid_4" style="">            
-            <h1>Sydney</h1>
-            Level 1<br/>
-            191 Clarence Street<br/>
-            Sydney NSW 2000<br/>
-            <br/>
-            t: +61 2 9299 6105<br/>
-            f: +61 2 9299 2805
-        </div>
-        <div id="perth_contact" class="grid_4" style="">
-            <h1>Perth</h1>
-            Level 18, Central Park<br/>
-            152-158 St Georges Terrace<br/>
-            Perth WA 6000<br/>
-            <br/>
-            t: +61 8 9288 1826<br/>
-            f: +61 8 9288 1827
-        </div>
-        <div class="clear"></div>
     </footer>
-  </div> <!--! end of #container -->
+    </div><!--/.fluid-container-->
 
-  <!-- JavaScript at the bottom for fast page loading -->
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/libs/jquery-1.7.2.min.js"></script>
+    <script src="/js/libs/bootstrap.min.js"></script>
 
-  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.4.min.js"><\/script>')</script>
+    <!-- scripts concatenated and minified via build script -->
+    <script  src="/js/plugins.js"></script>
+    <script  src="/js/script.js"></script>
+    <!-- end scripts -->
 
-  <!-- scripts concatenated and minified via build script -->
-  <script defer src="/js/plugins.js"></script>
-  <script defer src="/js/script.js"></script>
-  <!-- end scripts -->
-
-  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+    <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
        mathiasbynens.be/notes/async-analytics-snippet -->
-  <script>
+    <script>
     var _gaq=[['_setAccount','UA-21489748-1'],['_trackPageview'],['_trackPageLoadTime']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
-
-  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+    </script>
+    
+    <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
-  <!--[if lt IE 7 ]>
+    <!--[if lt IE 7 ]>
     <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
     <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-  <![endif]-->
+    <![endif]-->
 
-</body>
+
+  </body>
 </html>

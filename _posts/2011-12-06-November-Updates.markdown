@@ -35,7 +35,7 @@ to Answers</a> community driven forum. [learn more](http://complispace.github.co
 The 'CompliSpace Helpdesk' link also shows users the 5 most recent questions with 
 easy access to the provided answer.
 
-<div style="border: 1px dashed ghostwhite; text-align: center; padding: .5em;margin: .5em;">
+<div class="well">
 <strong>Try it now! <a href="http://q2a.complispace.net" target="q2a">CompliSpace Questions to Answers</a></strong>
 <a href="http://q2a.complispace.net" target="q2a"><img src="/images/q2a-screenshot.png" alt="Questions to Answers" style="margin-top: 1em"/></a>
 </div>
