@@ -6,7 +6,7 @@ categories:
 
 ---
 
-<em><time datetime="{{post.date | date: "%Y-%m-%d" }}" pubdate>Posted on {{post.date | date_to_long_string }}</time></em>
+<em><time datetime="{{page.date | date: "%Y-%m-%d" }}" pubdate="pubdate">Posted on {{page.date | date_to_long_string }}</time></em>
 
 CompliSpace Development is in the process of establishing it's
 [presence on GitHub](https://github.com/complispace).
