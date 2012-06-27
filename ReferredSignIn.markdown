@@ -11,8 +11,11 @@ This is accomplished by allowing an organisation's internal sites to generate
 signed links that signify to Fundamentals that the user is already trusted by 
 the referring site.
 
-A helper class written in [PHP](http://www.php.net) is available on 
-[GitHub](https://github.com/CompliSpace) as [GIST 907000](https://gist.github.com/907000).
+Helper classes/sample code is available on [GitHub](https://github.com/CompliSpace) as [GIST 907000](https://gist.github.com/907000).
+The sample code is available in [PHP](https://gist.github.com/907000#file_csf_referrer.class.php), 
+[C# .NET](https://gist.github.com/907000#file_csf_referrer.cs), 
+[Node.js (JavaScript)](https://gist.github.com/907000#file_csf_referrer.js) and 
+[Python](https://gist.github.com/907000#file_csf_referrer.py). 
 
 ##Implementation
 The implementation consists of appending several `GET` request parameters that 
