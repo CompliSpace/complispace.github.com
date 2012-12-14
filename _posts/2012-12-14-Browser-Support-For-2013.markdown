@@ -14,14 +14,14 @@ As I'm sure you are aware, the Internet and web technology are continually growi
 and maturing. In particular is the maturity of [web standards](http://en.wikipedia.org/wiki/Web_standards).
 
 To ensure that we positively contribute to good net citizenship and so that we
-can continue to deliver first class software, we will no longer be supporting older
+can deliver first class software, we will no longer be supporting older
 versions of web browsers that don't comply with modern standards as set out by the
 [Web Hypertext Application Technology Working Group](http://en.wikipedia.org/wiki/WHATWG) (WHATWG).
 
 <img src="https://developer.mozilla.org/files/563/Moz_ffx_openStandards_800x600.jpg" alt="" style="width:400px; float:right; margin-top:1em;" class="thumbnail" />
 
 ##Supported Browsers
-From January 2013, the browsers that we officially support are listed below. Older versions may work
+The list below shows the browsers that we will be officially supporting from January 2013. Older versions may work
 for you, but we will be unable to assist with any problems you may have while using an 
 unsupported browsers.
 
@@ -33,8 +33,8 @@ unsupported browsers.
 
 
 ##Internet Explorer
-While version 8 of Internet Explorer is quite old, we recognise that many business
-applications have legacy applications that require older browsers such as IE 8.
+While version 8 of Internet Explorer is quite old, we recognise that many business'
+have legacy applications that require older browsers such as IE 8.
 
 If you must use Internet Explorer, we recommend that you always use the most recent version
 and to install the [Google Chrome Frame plugin](http://www.google.com/chromeframe). 
