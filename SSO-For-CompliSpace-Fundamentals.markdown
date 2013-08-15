@@ -1,0 +1,82 @@
+---
+layout: default
+title: SAML Single Sign On (SSO) Service for CompliSpace Fundamentals
+---
+
+##Introduction
+Security Assertion Markup Language (SAML) is an XML standard that allows secure web domains to exchange user
+authentication and authorization data. Using SAML, an online service provider can contact a separate online identity
+provider to authenticate users who are trying to access secure content.
+
+CompliSpace Fundamentals offers a SAML-based Single Sign-On (SSO) service that provides customers with full control over
+the authorization and authentication of hosted user accounts that can access the CompliSpace Fundamentals web-based
+application. Using the SAML model, CompliSpace acts as the service provider and provides services such as Fundamentals.
+CompliSpace customers act as **identity providers** and control usernames, passwords and other information used to identify,
+authenticate and authorize users for web applications that CompliSpace hosts. There are a number of existing [open source](https://developers.google.com/google-apps/help/open-source#sso)
+and [commercial](http://www.google.com/enterprise/marketplace/search?categoryId=2&orderBy=rating) identity provider
+solutions that can help you implement SSO with CompliSpace Fundamentals.
+
+The CompliSpace SSO service is based on the [SAML v2.0 specifications](http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=security#samlv20). SAML v2.0 is supported by several widely known
+vendors.
+
+##Understanding SAML-based SSO for CompliSpace Fundamentals
+The following process explains how a user logs into the CompliSpace Fundamentals application through an organisations,
+SAML-based SSO service.
+
+Figure 1, shown below, illustrates the process by which a user logs in to the CompliSpace Fundamentals application
+through a SAML-based SSO service. The numbered list that follows the image explains each step in more detail.
+
+<div class="alert">
+<b>Note:</b> Before this process takes place, the organisation must provide CompliSpace with the URL for its SSO service
+as well as the public key that CompliSpace should use to verify SAML responses.
+</div>
+
+**Figure 1: Logging in to CompliSpace Fundamentals using SAML**
+
+![SAML Transaction Steps](/images/saml-transaction-steps.png)
+
+This image illustrates the following steps:
+
+1. The user attempts to reach the CompliSpace Fundamentals application.
+2. CompliSpace generates a SAML authentication request. The SAML request is encoded and embedded into the URL for the
+organisation's SSO service. The RelayState parameter containing the encoded URL of the CompliSpace Fundamentals site
+that the user is trying to reach is also embedded in the SSO URL. This RelayState parameter is meant to be an opaque
+identifier that is passed back without any modification or inspection.
+3. CompliSpace sends a redirect to the user's browser. The redirect URL includes the encoded SAML authentication request
+that should be submitted to the organisation's SSO service.
+4. The organisation decodes the SAML request and extracts the URL for both CompliSpace's ACS (Assertion Consumer Service)
+and the user's destination URL (RelayState parameter). The organisation then authenticates the user. Organisations could
+authenticate users by either asking for valid login credentials or by checking for valid session cookies.
+5. The organisation generates a SAML response that contains the authenticated user's username and other details.
+In accordance with the SAML 2.0 specification, this response is digitally signed with the organisations's public and
+private DSA/RSA keys.
+6. The organisation encodes the SAML response and the RelayState parameter and returns that information to the user's
+browser. The organisation provides a mechanism so that the browser can forward that information to CompliSpace's ACS. For
+example, the organisation could embed the SAML response and destination URL in a form and provide a button that the user
+can click to submit the form to CompliSpace. The organisation could also include JavaScript on the page that automatically
+submits the form to CompliSpace.
+7. CompliSpace's ACS verifies the SAML response using the organisation's public key. If the response is successfully
+verified, ACS redirects the user to the destination URL.
+8. The user has been redirected to the destination URL and is logged in to CompliSpace Fundamentals.
+
+##Active Directory Integration
+To work correctly with Active Directory, your SAML IdP must provide the following properties:
+
+* `sn` - The 'simple name' used to identify the user (as a human)
+* `email` - The email address used by the user
+* `objectGUID` - A unique identifer for the user that is persistent even if the user changes name or email address
+* `groups` - The list of groups the user belongs
+
+###How Do Groups Work?
+CompliSpace Fundamentals has a rather thorough permissions system, but it can easily be simplified for integration with
+SSO. First, if you want a user to have any kind of access to Fundamentals they must belong to a group called `Fundamentals`.
+
+Fundamentals partitions content in to *sections* such as *Public* (available to all staff), *HR Admin* (only available for
+your Human Resources staff), etc. A user with access to a section may have *read only (RO)* or *read/write (RW)* access.
+
+Section access is granted by ensuring the user belongs to a group that is made by taking the `section name` and appending
+either `RO` or `RW` as required for the access they require.
+
+For example, if you wish for a user to have read only access to the Public section then they must belong to a group
+called `PublicRO`. Should the user require read/write access then they must belong to a group called `PublicRW`.
+
