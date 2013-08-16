@@ -5,26 +5,26 @@ title: SAML Single Sign On (SSO) Service for CompliSpace Fundamentals
 
 ##Introduction
 Security Assertion Markup Language (SAML) is an XML standard that allows secure web domains to exchange user
-authentication and authorization data. Using SAML, an online service provider can contact a separate online identity
+authentication and authorisation data. Using SAML, an online service provider can contact a separate online identity
 provider to authenticate users who are trying to access secure content.
 
-CompliSpace Fundamentals offers a SAML-based Single Sign-On (SSO) service that provides customers with full control over
-the authorization and authentication of hosted user accounts that can access the CompliSpace Fundamentals web-based
+CompliSpace Fundamentals offers a SAML based Single Sign-On (SSO) service that provides customers with full control over
+the authorisation and authentication of hosted user accounts that can access the CompliSpace Fundamentals web-based
 application. Using the SAML model, CompliSpace acts as the service provider and provides services such as Fundamentals.
 CompliSpace customers act as **identity providers** and control usernames, passwords and other information used to identify,
-authenticate and authorize users for web applications that CompliSpace hosts. There are a number of existing [open source](https://developers.google.com/google-apps/help/open-source#sso)
+authenticate and authorise users for web applications that CompliSpace hosts. There are a number of existing [open source](https://developers.google.com/google-apps/help/open-source#sso)
 and [commercial](http://www.google.com/enterprise/marketplace/search?categoryId=2&orderBy=rating) identity provider
 solutions that can help you implement SSO with CompliSpace Fundamentals.
 
 The CompliSpace SSO service is based on the [SAML v2.0 specifications](http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=security#samlv20). SAML v2.0 is supported by several widely known
 vendors.
 
-##Understanding SAML-based SSO for CompliSpace Fundamentals
-The following process explains how a user logs into the CompliSpace Fundamentals application through an organisations,
-SAML-based SSO service.
+##Understanding SAML based SSO for CompliSpace Fundamentals
+The following process explains how a user logs into the CompliSpace Fundamentals application through an organisation's,
+SAML based SSO service.
 
 Figure 1, shown below, illustrates the process by which a user logs in to the CompliSpace Fundamentals application
-through a SAML-based SSO service. The numbered list that follows the image explains each step in more detail.
+through a SAML based SSO service. The numbered list that follows the image explains each step in more detail.
 
 <div class="alert">
 <b>Note:</b> Before this process takes place, the organisation must provide CompliSpace with the URL for its SSO service
@@ -71,7 +71,7 @@ To work correctly with Active Directory, your SAML IdP must provide the followin
 CompliSpace Fundamentals has a rather thorough permissions system, but it can easily be simplified for integration with
 SSO. First, if you want a user to have any kind of access to Fundamentals they must belong to a group called `Fundamentals`.
 
-Fundamentals partitions content in to *sections* such as *Public* (available to all staff), *HR Admin* (only available for
+Fundamentals partitions content into *sections* such as *Public* (available to all staff), *HR Admin* (only available for
 your Human Resources staff), etc. A user with access to a section may have *read only (RO)* or *read/write (RW)* access.
 
 Section access is granted by ensuring the user belongs to a group that is made by taking the `section name` and appending
