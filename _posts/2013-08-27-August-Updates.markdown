@@ -7,7 +7,7 @@ categories:
 ---
 
 ##Schedule
-August updates are scheduled to take place on **DayOfWeek Date Month** with no
+August updates are scheduled to take place on Thursday 4th September with no
 disruption to services expected. If a client has unusual behaviour, be sure to
 have them [clear their cache][Clear Cache].
 
