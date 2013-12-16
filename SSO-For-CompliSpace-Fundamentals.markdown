@@ -27,8 +27,7 @@ Figure 1, shown below, illustrates the process by which a user logs in to the Co
 through a SAML based SSO service. The numbered list that follows the image explains each step in more detail.
 
 <div class="alert">
-<b>Note:</b> Before this process takes place, the organisation must provide CompliSpace with the URL for its SSO service
-as well as the public key that CompliSpace should use to verify SAML responses.
+<b>Note:</b> Before this process takes place, the organisation must provide CompliSpace with the <i>metadata XML</i> for their IdP. CompliSpace will also provide the organisation the <i>metadata XML</i> for the Fundamentals SP.
 </div>
 
 **Figure 1: Logging in to CompliSpace Fundamentals using SAML**
@@ -62,10 +61,14 @@ verified, ACS redirects the user to the destination URL.
 ##Active Directory Integration
 To work correctly with Active Directory, your SAML IdP must provide the following properties:
 
-* `sn` - The 'simple name' used to identify the user (as a human)
-* `email` - The email address used by the user
+* `givenName` - The first name of the user
+* `sn` - The surname of the user
+* `mail` - The email address used by the user
 * `objectGUID` - A unique identifer for the user that is persistent even if the user changes name or email address
-* `groups` - The list of groups the user belongs
+* `groups` - The list of groups the user belongs in the *Distinguished Name* (DN) format.
+
+Please note that each property is *case sensitive*. All properties with the exception of the `groups` property must be sent as a string. The `groups` property is the exception which is a list strings that represent the user's groups in the DN format.
+
 
 ###How Do Groups Work?
 CompliSpace Fundamentals has a rather thorough permissions system, but it can easily be simplified for integration with
