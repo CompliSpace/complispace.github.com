@@ -67,7 +67,7 @@ To work correctly with Active Directory, your SAML IdP must provide the followin
 * `objectGUID` - A unique identifer for the user that is persistent even if the user changes name or email address
 * `groups` - The list of groups the user belongs in the *Distinguished Name* (DN) format.
 
-Please note that each property is *case sensitive*. All properties with the exception of the `groups` property must be sent as a string. The `groups` property is the exception which is a list strings that represent the user's groups in the DN format.
+Please note that each property is *case sensitive*. All properties with the exception of the `groups` property must be sent as a string. The `groups` property is the exception which is a list of strings that represent the user's groups in the DN format.
 
 
 ###How Do Groups Work?
