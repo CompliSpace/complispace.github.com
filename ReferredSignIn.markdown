@@ -21,6 +21,18 @@ The sample code is available in [PHP](https://gist.github.com/907000#file_csf_re
 The implementation consists of appending several `GET` request parameters that 
 are signed by a secret key.
 
+<div class="alert alert-error">
+<p>
+<h4>ATTENTION:</h4> The secret key MUST NEVER be exposed to the client browser.
+URL generation MUST be done server side.
+</p>
+<p>
+Exposing the secret key will compromise the security of your site, and possibly
+breach the terms of your contract with CompliSpace.
+</p>
+</div>
+
+
 If you would like to use this feature, please contact CompliSpace and request
 a <mark>Referred Sign In Private Key</mark>.
 
