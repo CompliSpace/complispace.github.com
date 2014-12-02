@@ -51,12 +51,13 @@
           <a class="brand" href="/">CompliSpace Developer Blog</a>
           <div class="nav-collapse">
             <ul class="nav">
-                <li class=""><a href="/index.html" title="View the 5 most recent posts">Recent Posts</a></li>
-                <li><a href="/Archives.html" title="View a list of all the CompliSpace Developer posts">All Posts</a></li>
+<!--                <li class=""><a href="/index.html" title="View the 5 most recent posts">Recent Posts</a></li>
+                <li><a href="/Archives.html" title="View a list of all the CompliSpace Developer posts">All Posts</a></li>-->
                 <!--<li><a href="http://q2a.complispace.net/" target="q2a" title="Ask questions about the CompliSpace Fundamentals program and receive answers from CompliSpace staff and other expert users">Q <sub>2</sub> A</a></li>-->
                 <!--                    <li><a href="/blog-feed.xml">RSS Feed</a></li>-->
             </ul>
-          </div><!--/.nav-collapse -->
+          </div>
+          <!--/.nav-collapse -->
         </div>
       </div>
     </div>
@@ -64,22 +65,23 @@
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span3">
-          <div class="well sidebar-nav">
+<!--          <div class="well sidebar-nav">
             <ul class="nav nav-list">
-              <li class="nav-header">Recent Posts</li>
+              <li class="nav-header">Previous Posts</li>
                 {% for post in site.posts limit:5 %}
                 <li>
                 <a href="{{post.url}}">{{post.title}}</a> - <em><time datetime="{{post.date | date: "%Y-%m-%d" }}" pubdate>Posted on {{post.date | date: "%d %b %Y" }}</time></em>
                 </li>
                 {% endfor %}            
             </ul>
-          </div><!--/.well -->
+          </div>-->
+            <!--/.well -->
           <div class="well sidebar-nav">
               <ul class="nav nav-list">
                   <li class="nav-header">Important Information</li>
-                  <li><a href="/SSO-For-CompliSpace-Fundamentals.html">SSO Service for CompliSpace Fundamentals</a></li>
+                  <li><a href="/SSO-For-CompliSpace-Fundamentals.html">Using SAML 2.0 for SSO</a></li>
+                  <li><a href="/ReferredSignIn.html">Using Referred Signin for SSO</a></li>
                   <li><a href="/article/2012/12/14/Browser-Support-For-2013.html">Browser Support For 2013</a></li>
-                  <li><a href="/ReferredSignIn.html">Referred Signin</a></li>
                   <li><a href="/article/2011/11/29/Fundamentals-Supported-File-Types.html">Supported File Types</a></li>
                   <!--<li><a href="/article/2011/11/10/Community-Questions-And-Answers.html">Community Driven "Questions To Answers"</a></li>-->
                   <li><a href="/article/2012/08/01/Receive-Emails-From-CompliSpace-Fundamentals.html">Receive Emails From CompliSpace Fundamentals</a></li>
@@ -88,8 +90,11 @@
           <div class="well sidebar-nav">
               <ul class="nav nav-list">
                   <li class="nav-header">Interesting Links</li>
+                  <li><a href="http://gamejolt.com/profile/michael-mchugh/292948/">Games</a> - Games written by the CompliSpace CTO</li>
+                  <li><a href="http://www.watersideresortpranburi.com/">Waterside Resort</a> - Resort in Thailand run by the CTO's family</li>
                   <li><a href="http://www.earthexplorer.info">Earth Explorer</a> - Explore the world</li>
                   <li><a href="http://ivory-breeze.herokuapp.com">Ivory Breeze</a> - Extract keywords and locations from text and websites</li>
+                  
               </ul>
           </div>
           <hr/>
