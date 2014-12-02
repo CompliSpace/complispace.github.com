@@ -1,15 +1,150 @@
 ---
 layout: default
-title: Recent Posts
+title: Overview of Single Sign On (SSO) Methods
 navItem: index
 ---
 
-{% for post in site.posts limit:5 %}
+<!--{% for post in site.posts limit:5 %}
 <article>
 <h1><a href="{{post.url}}">{{post.title}}</a></h1>
 <em><time datetime="{{post.date | date: "%Y-%m-%d" }}" pubdate>Posted on {{post.date | date_to_long_string }}</time></em>
 {{post.content}}
 <hr/>
 </article>
-{% endfor %}
+{% endfor %}-->
+
+<br/>
+
+<h1>SSO Integration</h1>
+<p>
+    Single Sign-On (SSO) is a method of access control of multiple related, but 
+    independent software systems. With this method a user logs in once and gains 
+    access to all systems without being prompted to log in again at each of them.
+</p>
+<p>
+    It is important to note that while SSO once implemented is incredibly easy
+    for end users, it is very complicated for technical staff to implement and
+    requires high levels of resources and knowledge.
+</p>
+<p>
+    CompliSpace Fundamentals supports two methods of SSO suitable to different
+    needs and in-house skill sets available for implementation.
+</p>
+<h2>SSO Using SAML 2.0</h2>
+<p>
+    CompliSpace supports the <a href="https://wiki.oasis-open.org/security/FrontPage">SAML 2.0 protocol</a>.
+</p>
+<div class="alert alert-info">
+    CompliSpace Technology supports this single sign-on experience as the integration 
+    of a SAML 2.0 compliant Identity Provider (IdP) you have already installed and made operational. 
+    CompliSpace Technology will do it's best to provide support with the SAML protocol, however 
+    your Identity Provider (IdP) is a third-party product and therefore CompliSpace Technology
+    does not provide detailed support for the deployment, configuration, troubleshooting, best practices, etc. 
+    Issues and questions regarding your Identity Provider (IdP) should be directed to
+    your vendor.
+</div>
+<p>
+    CompliSpace Technology recommends that you engage <a href="http://studentnet.net/">Student Net</a>
+    for your identity requirements.
+</p>
+<div class="alert alert-danger">
+    If you do not already have extensive experience with implementing and
+    configuring SAML 2.0 Identity Providers, CompliSpace Technology 
+    <b>highly</b> recommends against doing this your self.
+</div>
+<p>
+    For those using Microsoft products, ADFS provides some level of SAML support.
+</p>
+<div class="alert">
+    It has been our experience that many Microsoft Certified Partners have no
+    more than an 'able to install the software' level of knowledge when it comes
+    to SAML integration and struggle when it comes to actual implementation.
+</div>
+<p>
+    Integrating with CompliSpace Fundamentals using SAML 2.0 allows your directory
+    to tell CompliSpace details about the user such as name and email address. It
+    also has the advantage that access permissions in Fundamentals are also controlled
+    by your directory, allowing a single 'source of truth' without having to manage
+    permissions separately inside Fundamentals.
+</p>
+<h3>More Information on SAML 2.0 Integration</h3>
+<ul>
+    <li><a href="http://studentnet.net">StudentNet</a></li>
+    <li><a href="/SSO-For-CompliSpace-Fundamentals.html">SSO For CompliSpace Fundamentals</a></li>
+    <li><a href="https://www.microsoft.com/learning/en-us/course.aspx?id=50412b">Microsoft Learning - Implementing Active Directory Federation Services 2.0</a></li>
+    <li><a href="https://gist.github.com/alchemycs/1c0f72f2cc59ec84def1">ADFS Claim Rules</a>. These work with our ADFS testing server. Your mileage may vary.</li>
+</ul>
+
+<h2>SSO Using Referred Sign In</h2>
+<p>
+    CompliSpace Fundamentals supports a mechanism where a URL to Fundamentals 
+    can be signed by a trusted source. The signature includes the user that is to
+    be signed in along with an expiration that can be no more than 6 hours.
+</p>
+<div class="alert alert-success">
+    If you are familiar with how AWS signs access to S3 objects you will feel at home!
+</div>
+<p>
+    This method is good when you don't want to invest in the infrastructure of
+    identity management, but already have a small portal or web page (often an intranet)
+    where your users have already authenticated.
+</p>
+<p>
+    Referred sign in allows your portal page to create a unique link for each user
+    such that when they follow it to Fundamentals they will be logged in automatically.
+</p>
+<div class="alert">
+    <p>
+        You must have server side web programming skills and access to 
+        your portals server side scripting to implement Referred Sign In. 
+    </p>
+    <p>
+        You should be familiar with concepts such as HMAC, SHA and BASE64 encoding.
+    </p>
+</div>
+<h3>More Information on Referred Sign In</h3>
+<ul>
+    <li><a href="/ReferredSignIn.html">Referred Sign In Algorithm</a></li>
+    <li><a href="https://gist.github.com/907000">Sample Code (PHP, NodeJS, C#, Python)</a></li>
+</ul>
+<h2>Feature Matrix</h2>
+<table class="table table-bordered table-striped">
+    <tr>
+        <th>Method</th>
+        <th>Skills</th>
+        <th>Implementation Skill</th>
+        <th>Single Source for Users and Permissions</th>
+        <th>3rd Party Integration</th>
+        <th>Prerequisites</th>
+    </tr>
+    <tr>
+        <td>SAML 2.0</td>
+        <td>Able to install and configure a SAML 2.0 IdP</td>
+        <td>Experienced SAML Administrator</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>
+            <ul>
+                <li>Working SAML 2.0 IdP</li>
+                <li>Systems Administrator with SAML knowledge</li>
+            </ul>
+            
+        </td>
+    </tr>
+    <tr>
+        <td>Referred Sign In</td>
+        <td>Able to program server side web scripts</td>
+        <td>Developer with medium crypto skills</td>
+        <td>No</td>
+        <td>No</td>
+        <td>
+            <ul>
+                <li>Existing portal that can validate users</li>
+                <li>Access to your portals back end code</li>
+                <li>Developer with basic crypto knowledge</li>
+            </ul>
+            
+        </td>
+    </tr>
+</table>
 
