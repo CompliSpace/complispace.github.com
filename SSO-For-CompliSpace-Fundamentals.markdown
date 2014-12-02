@@ -19,6 +19,17 @@ solutions that can help you implement SSO with CompliSpace Fundamentals.
 The CompliSpace SSO service is based on the [SAML v2.0 specifications](http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=security#samlv20). SAML v2.0 is supported by several widely known
 vendors.
 
+<div class="alert alert-info">
+    CompliSpace Technology supports this single sign-on experience as the integration 
+    of a SAML 2.0 compliant Identity Provider (IdP) you have already installed and made operational. 
+    CompliSpace Technology will do it's best to provide support with the SAML protocol, however 
+    your Identity Provider (IdP) is a third-party product and therefore CompliSpace Technology
+    does not provide detailed support for the deployment, configuration, troubleshooting, best practices, etc. 
+    Issues and questions regarding your Identity Provider (IdP) should be directed to
+    your vendor.
+</div>
+
+
 ##Understanding SAML based SSO for CompliSpace Fundamentals
 The following process explains how a user logs into the CompliSpace Fundamentals application through an organisation's,
 SAML based SSO service.
@@ -58,28 +69,43 @@ submits the form to CompliSpace.
 verified, ACS redirects the user to the destination URL.
 8. The user has been redirected to the destination URL and is logged in to CompliSpace Fundamentals.
 
-##Active Directory Integration
-To work correctly with Active Directory, your SAML IdP must provide the following properties:
+##Required Assertions
+CompliSpace Fundamentals requires several claims/assertions that your SAML IdP must provide
+in order to work correctly. These can be provided using either the `short name`, `url scheme` or `urn oid`
+
+The claims in the `short name` format include:
 
 * `givenName` - The first name of the user
 * `sn` - The surname of the user
 * `mail` - The email address used by the user
 * `objectGUID` - A unique identifer for the user that is persistent even if the user changes name or email address
-* `memberOf` - The list of groups the user belongs in the *Distinguished Name* (DN) format.
+* `memberOf` - The list of groups the user belongs in the *Distinguished Name* (DN) format or as a simple string.
 
-Please note that each property is *case sensitive*. All properties with the exception of the `memberOf` property must be sent as a string. The `memberOf` property is the exception which is a list of strings that represent the user's groups in the DN format.
+For the full list of claim maps in all formats, please see the Google Sheets Document, [SAML Required Attributes](https://docs.google.com/spreadsheets/d/1yMnq7leUjX-iulmQecVv3_HMIHxqGjOOHBNFNDCSi_g/edit?usp=sharing)
 
-
-###How Do Groups Work?
-CompliSpace Fundamentals has a rather thorough permissions system, but it can easily be simplified for integration with
+##Working with Permissions and Groups
+CompliSpace Fundamentals has a rather thorough permissions system, but has been simplified for integration with
 SSO. First, if you want a user to have any kind of access to Fundamentals they must belong to a group called `Fundamentals`.
+This allows you to temporarily remove access to a user without having to remove and re-add all the detailed permissions.
 
 Fundamentals partitions content into *sections* such as *Public* (available to all staff), *HR Admin* (only available for
-your Human Resources staff), etc. A user with access to a section may have *read only (RO)* or *read/write (RW)* access.
+your Human Resources staff), etc. Please contact your CRM for details on sections availble to your installation. 
+A user with access to a section may have *read only (RO)* or *read/write (RW)* access.
 
 Section access is granted by ensuring the user belongs to a group that is made by taking the `section name` and appending
 either `RO` or `RW` as required for the access they require.
 
 For example, if you wish for a user to have read only access to the Public section then they must belong to a group
-called `PublicRO`. Should the user require read/write access then they must belong to a group called `PublicRW`.
+called `Public RO`. Should the user require read/write access then they must belong to a group called `Public RW`.
+
+All characters in a group must match exactly. For example, the section called `Human Resources (Admin Only)` can be granted
+read only access to a user by assigning them to a group called `Human Resources (Admin Only) RO`
+
+###Group Format
+The format for the group name can be either a simple string or in the **Distinguished Name (DN)** format. 
+
+
+With the DN format, only the **CN** RDN component is used. 
+
+Example: `CN=Human Resource (Admin Only) RO,OU=Fundamentals,OU=CompliSpace,OU=Vendors,DC=complispace,DC=net`
 
