@@ -1,0 +1,1937 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+		<title>CompliSpace Developer Blog</title>
+		<description>Behind the curtain at CompliSpace</description>
+		<link>http://complispace.github.com/</link>
+		
+			<item>
+				<title>September Fundamentals Updates</title>
+				<description>&lt;h2 id='schedule'&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;September updates are scheduled to take place on Thursday 17th October with no disruption to services expected. If a client has unusual behaviour, be sure to have them &lt;a href='http://www.wikihow.com/Clear-Your-Browser&amp;apos;s-Cache'&gt;clear their cache&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id='change_log'&gt;Change Log&lt;/h2&gt;
+
+&lt;p&gt;The Developers have been working hard to bring you new features and &lt;em&gt;lots&lt;/em&gt; of bug fixes!&lt;/p&gt;
+
+&lt;p&gt;We&amp;#8217;ve also moved to using Jira by Atlassian for our issue tracking so you will notice some differences in the issue id format.&lt;/p&gt;
+
+&lt;p&gt;The volume of issues we are addressing makes it impractical for us to list each one, so instead we will now list only the &amp;#8220;Big Ticket&amp;#8221; things.&lt;/p&gt;
+
+&lt;h3 id='fm41_project_blue_beard'&gt;FM-41 Project Blue Beard&lt;/h3&gt;
+
+&lt;p&gt;To cut a long story short, the Fundamentals code was forked away from Komodo CMS years ago. We&amp;#8217;ve been providing our own enhancements and bug fixes and heading in a different direction. While the original Komodo CMS is designed for public web sites, Fundamentals requires strict security and specialised functionality. To avoid confusion, we have updated a lot of references so you know the software you are using is maintained and secured by CompliSpace Technology.&lt;/p&gt;
+
+&lt;h3 id='fm8_simplified_permissions'&gt;FM-8 Simplified Permissions&lt;/h3&gt;
+
+&lt;p&gt;The permission system is quite complicated for every day use. We&amp;#8217;re streamlining this to allow a user to have a simple read or write privilege on each section while hiding away the underlying complexities.&lt;/p&gt;
+
+&lt;h3 id='fm16_improve_wording_of_compliflow_emails_when_assigned_back_to_the_previous_stage'&gt;FM-16 Improve wording of CompliFlow emails when assigned back to the previous stage&lt;/h3&gt;
+
+&lt;h3 id='fm29_provide_an_error_message_when_attempting_to_select_assets_from_other_sections'&gt;FM-29 Provide an error message when attempting to select assets from other sections&lt;/h3&gt;
+
+&lt;h3 id='fm30_if_a_download_link_is_not_accessible_a_visual_indicator_is_shown'&gt;FM-30 If a download link is not accessible, a visual indicator is shown&lt;/h3&gt;
+
+&lt;h3 id='fm50_include_a_date_received_as_part_of_the_complaints_register'&gt;FM-50 Include a &amp;#8216;date received&amp;#8217; as part of the complaints register&lt;/h3&gt;</description>
+				<link>http://complispace.github.com/update/2013/10/09/September-Updates.html</link>
+				<pubDate>Wed, 09 October 2013 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>August Fundamentals Updates</title>
+				<description>&lt;h2 id='schedule'&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;August updates are scheduled to take place on Thursday 4th September with no disruption to services expected. If a client has unusual behaviour, be sure to have them &lt;a href='http://www.wikihow.com/Clear-Your-Browser&amp;apos;s-Cache'&gt;clear their cache&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id='change_log'&gt;Change Log&lt;/h2&gt;
+
+&lt;p&gt;This release includes 10 specific issues that affect end users.&lt;/p&gt;
+
+&lt;h3 id='issue900_faster_sitemap_loading'&gt;Issue-900: Faster Sitemap Loading&lt;/h3&gt;
+
+&lt;p&gt;Optimisations to backend code result in sitemaps loading faster.&lt;/p&gt;
+
+&lt;h3 id='issue895_anchor_tags_available_to_content_items'&gt;Issue-895: Anchor Tags Available to Content Items&lt;/h3&gt;
+
+&lt;p&gt;You can now easily add anchor tags to jump between different sections of content on a page.&lt;/p&gt;
+
+&lt;h3 id='issue894_assessment_emails_linking_to_training'&gt;Issue-894: Assessment Emails Linking To Training&lt;/h3&gt;
+
+&lt;p&gt;Assessments can now be configured so test emails include a link to the relevant training.&lt;/p&gt;
+
+&lt;h3 id='issue889_due_date_on_assessments'&gt;Issue-889: Due Date on Assessments&lt;/h3&gt;
+
+&lt;p&gt;Assessments can now be configured with a due date. This is used by the assessment report.&lt;/p&gt;
+
+&lt;h3 id='issue888_required_questions'&gt;Issue-888: Required Questions&lt;/h3&gt;
+
+&lt;p&gt;Questions in assessments can now be marked as &amp;#8216;required&amp;#8217;. This results in an automatic &lt;em&gt;fail&lt;/em&gt; if this required questions are incorrect.&lt;/p&gt;
+
+&lt;h3 id='issue887_incomplete_tests_view'&gt;Issue-887: Incomplete Tests View&lt;/h3&gt;
+
+&lt;p&gt;A view is now available that show incomplete tests.&lt;/p&gt;
+
+&lt;h3 id='issue884_publishing_report_sorted_by_date'&gt;Issue-884: Publishing Report Sorted By Date&lt;/h3&gt;
+
+&lt;p&gt;The publishing report is now easier to view chronologically.&lt;/p&gt;
+
+&lt;h3 id='issue880_bulk_user_upload_staff_directory_position'&gt;Issue-880: Bulk User Upload Staff Directory Position&lt;/h3&gt;
+
+&lt;p&gt;The staff directory was not updating the persons position during a bulk upload. This is now fixed.&lt;/p&gt;
+
+&lt;h3 id='issue872_improve_visual_accessibility'&gt;Issue-872: Improve Visual Accessibility&lt;/h3&gt;
+
+&lt;p&gt;Changes to colours and patterns improve accessibility.&lt;/p&gt;
+
+&lt;h3 id='issue856_user_privileges_report'&gt;Issue-856: User Privileges Report&lt;/h3&gt;
+
+&lt;p&gt;Administrators can now export a CSV file reporting the privileges of users.&lt;/p&gt;</description>
+				<link>http://complispace.github.com/update/2013/08/27/August-Updates.html</link>
+				<pubDate>Tue, 27 August 2013 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>June Fundamentals Updates</title>
+				<description>&lt;h2 id='introduction'&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;June updates, if a client has unusual behaviour, be sure to have them &lt;a href='http://www.wikihow.com/Clear-Your-Browser&amp;apos;s-Cache'&gt;clear their cache&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id='change_log'&gt;Change Log&lt;/h2&gt;
+
+&lt;p&gt;This month there are 16 specific issues.&lt;/p&gt;
+
+&lt;h3 id='issue863_reduce_http_requests'&gt;Issue-863: Reduce HTTP Requests&lt;/h3&gt;
+
+&lt;p&gt;Client side code has been refactored to reduce the number and size of HTTP requests. This means a faster loading experience.&lt;/p&gt;
+
+&lt;h3 id='issue861_excel_template_documents'&gt;Issue-861: Excel Template Documents&lt;/h3&gt;
+
+&lt;p&gt;Microsoft Excel Template Documents are supported.&lt;/p&gt;
+
+&lt;h3 id='issue859_fixed_the_confusion_around_the_user_active_status'&gt;Issue-859: Fixed the Confusion Around the User &amp;#8216;Active&amp;#8217; Status&lt;/h3&gt;
+
+&lt;p&gt;There were two kinds of &amp;#8216;active&amp;#8217; status for users, the functionality has been merged into a single state.&lt;/p&gt;
+
+&lt;h3 id='issue858_hazard_register_terminology'&gt;Issue-858: Hazard Register Terminology&lt;/h3&gt;
+
+&lt;p&gt;Terminology has been standardised.&lt;/p&gt;
+
+&lt;h3 id='issue852_navigation_buttons_not_showing'&gt;Issue-852: Navigation Buttons Not Showing&lt;/h3&gt;
+
+&lt;p&gt;In some instances navigation buttons were not showing correctly. This has been resolved&lt;/p&gt;
+
+&lt;h3 id='issue840_unable_to_assign_compliflow_forms_on_mobile_devices'&gt;Issue-840: Unable to Assign CompliFlow Forms on Mobile Devices&lt;/h3&gt;
+
+&lt;p&gt;Now works as expected on mobile devices.&lt;/p&gt;
+
+&lt;h3 id='issue838_tables_not_pasting_correctly'&gt;Issue-838: Tables Not Pasting Correctly&lt;/h3&gt;
+
+&lt;p&gt;In some circumstances tables were not pasting correctly. This has been resolved.&lt;/p&gt;
+
+&lt;p&gt;Please note: CompliSpace Technology discourages the use of tables. If you use them your content will not display correctly on mobile devices.&lt;/p&gt;
+
+&lt;h3 id='issue832_archive_page_interface'&gt;Issue-832: Archive Page Interface&lt;/h3&gt;
+
+&lt;p&gt;The interface to the archive pages has been improved.&lt;/p&gt;
+
+&lt;h3 id='issue817_default_file_library_section'&gt;Issue-817: Default File Library Section&lt;/h3&gt;
+
+&lt;p&gt;The default section for the file library is now &amp;#8216;Public&amp;#8217;. Note that &amp;#8216;Public&amp;#8217; means available to all your users. The section &amp;#8216;Global&amp;#8217; means available to all users on the Internet. You can now enter an incident up to five years old.&lt;/p&gt;
+
+&lt;h3 id='issue815_file_library_fake_path_fixed'&gt;Issue-815: File Library &amp;#8216;Fake Path&amp;#8217; Fixed&lt;/h3&gt;
+
+&lt;p&gt;For security, modern browsers in windows often replace the path on your hard drive with &amp;#8216;c:\fakepath&amp;#8217;. We now detect this and try to make the path easier to read. General internal code improvements&lt;/p&gt;
+
+&lt;h3 id='issue804_merge_field_usage'&gt;Issue-804: Merge Field Usage&lt;/h3&gt;
+
+&lt;p&gt;Information about merge field usage is now available.&lt;/p&gt;
+
+&lt;h3 id='issue781_removal_of_spell_check_tool'&gt;Issue-781: Removal of Spell Check Tool&lt;/h3&gt;
+
+&lt;p&gt;Modern browsers now support spell checking in input fields and reference your local language and dictionary settings. This is now used in favour of the outdated Komodo spell check library.&lt;/p&gt;
+
+&lt;h3 id='issue775_improved_functionality_in_compliflow_for_forms_assigned_to_deleted_users'&gt;Issue-775: Improved Functionality in CompliFlow for Forms Assigned to Deleted Users&lt;/h3&gt;
+
+&lt;p&gt;Improved Functionality in CompliFlow for Forms Assigned to Deleted Users.&lt;/p&gt;
+
+&lt;h3 id='issue699_unable_to_edit_tables'&gt;Issue-699: Unable to Edit Tables&lt;/h3&gt;
+
+&lt;p&gt;In some circumstances tables could not be edited. This has been resolved.&lt;/p&gt;
+
+&lt;p&gt;Please note: CompliSpace Technology discourages the use of tables. If you use them your content will not display correctly on mobile devices.&lt;/p&gt;</description>
+				<link>http://complispace.github.com/update/2013/07/31/June-Updates.html</link>
+				<pubDate>Wed, 31 July 2013 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>May Fundamentals Updates</title>
+				<description>&lt;h2 id='introduction'&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;It&amp;#8217;s been a while since we rolled out updates for Fundamentals, but we&amp;#8217;ve been busy working away in the background building new products, preparing major upgrades to our infrastructure and of course improving Fundamentals.&lt;/p&gt;
+
+&lt;h2 id='schedule'&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;May updates are scheduled to take place on Thursday 23rd May with no disruption to services expected. If a client has unusual behaviour, be sure to have them &lt;a href='http://www.wikihow.com/Clear-Your-Browser&amp;apos;s-Cache'&gt;clear their cache&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id='change_log'&gt;Change Log&lt;/h2&gt;
+
+&lt;p&gt;This month there are 18 specific issues.&lt;/p&gt;
+
+&lt;h3 id='issue603649_improved_logging_for_complispace_staff'&gt;Issue-603/649: Improved Logging For CompliSpace Staff&lt;/h3&gt;
+
+&lt;p&gt;Logging has been improved for internal CompliSpace management software (TOLTOOL)&lt;/p&gt;
+
+&lt;h3 id='issue669_moving_files_in_the_file_library'&gt;Issue-669: Moving Files In The File Library&lt;/h3&gt;
+
+&lt;p&gt;At long last you can now move files around in the file library.&lt;/p&gt;
+
+&lt;h3 id='issue715_staff_directory_photo_cropping'&gt;Issue-715: Staff Directory Photo Cropping&lt;/h3&gt;
+
+&lt;p&gt;Fixed to support Internet Explorer 9/10. Other browsers still just work as expected. CompliSpace Technology discourages the use of Internet Explorer.&lt;/p&gt;
+
+&lt;h3 id='issue731_submission_date_on_compliflow_forms'&gt;Issue-731: Submission Date On CompliFlow Forms&lt;/h3&gt;
+
+&lt;p&gt;CompliFlow forms now show the submission date on forms.&lt;/p&gt;
+
+&lt;h3 id='issue733_removed_display_of_draft_pages_from_left_navigation'&gt;Issue-733: Removed Display Of Draft Pages From Left Navigation&lt;/h3&gt;
+
+&lt;p&gt;In some instances draft pages were being displayed in the left navigation menu. This has been corrected.&lt;/p&gt;
+
+&lt;h3 id='issue736_file_names_with_semicolons'&gt;Issue-736: File Names With Semicolons&lt;/h3&gt;
+
+&lt;p&gt;File names that include a semicolon can now be uploaded into the file library.&lt;/p&gt;
+
+&lt;h3 id='issue746_internal_sitemap_issue_resolved'&gt;Issue-746: Internal Sitemap Issue Resolved&lt;/h3&gt;
+
+&lt;p&gt;A sitemap issue on internal tools has been resolved.&lt;/p&gt;
+
+&lt;h3 id='issue751_implemented_feature_request_for_pass_marks'&gt;Issue-751: Implemented Feature Request For Pass Marks&lt;/h3&gt;
+
+&lt;p&gt;Tests can now be assigned a pass mark. Failing a test causes the test to be reassigned.&lt;/p&gt;
+
+&lt;h3 id='issue753_incidentinjury_form_year_selection'&gt;Issue-753: Incident/Injury Form Year Selection&lt;/h3&gt;
+
+&lt;p&gt;You can now enter an incident up to five years old.&lt;/p&gt;
+
+&lt;h3 id='issue760_improved_code'&gt;Issue-760: Improved Code&lt;/h3&gt;
+
+&lt;p&gt;General internal code improvements&lt;/p&gt;
+
+&lt;h3 id='issue776_cancel_login_redirects_on_home_page'&gt;Issue-776: Cancel login redirects on home page&lt;/h3&gt;
+
+&lt;p&gt;Placing a login panel on the home page resulted in a redirect. This has been addressed.&lt;/p&gt;
+
+&lt;h3 id='issue788_improvement_to_internal_sitemap_tools'&gt;Issue-788: Improvement To Internal Sitemap Tools&lt;/h3&gt;
+
+&lt;p&gt;Internal issue with TOLTOOL&lt;/p&gt;
+
+&lt;h3 id='issue790_file_library_section_deletions'&gt;Issue-790: File Library Section Deletions&lt;/h3&gt;
+
+&lt;p&gt;In some circumstances duplicate sections were created in the file library and couldn&amp;#8217;t be deleted. This has been addressed.&lt;/p&gt;
+
+&lt;h3 id='issue792_firefox_printing_only_one_page'&gt;Issue-792: Firefox Printing Only One Page&lt;/h3&gt;
+
+&lt;p&gt;CSS has been updated to ensure newer firefox prints all pages.&lt;/p&gt;
+
+&lt;h3 id='issue793_content_item_bug'&gt;Issue-793: Content Item Bug&lt;/h3&gt;
+
+&lt;p&gt;In some cases certain content items were not opening correctly for editing. This has been addressed.&lt;/p&gt;
+
+&lt;h3 id='issue796_added_login_panel_to_archive_pages'&gt;Issue-796: Added Login Panel to Archive Pages&lt;/h3&gt;
+
+&lt;p&gt;Previously trying to access archive pages without being logged in would result in a &amp;#8216;forbidden&amp;#8217; error. Now users are presented with a login panel.&lt;/p&gt;
+
+&lt;h3 id='issue818_compliflow_not_working_on_ie_910'&gt;Issue-818: CompliFlow Not Working On IE 9/10&lt;/h3&gt;
+
+&lt;p&gt;Internet Explorer 9/10 has a bug where it doesn&amp;#8217;t correctly handle certain characters in form field names. We have made a work around until Microsoft fix this bug. Don&amp;#8217;t hold your breath.&lt;/p&gt;</description>
+				<link>http://complispace.github.com/update/2013/05/17/May-Updates.html</link>
+				<pubDate>Fri, 17 May 2013 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>Browser Support For 2013</title>
+				<description>&lt;h2 id='welcome_html5'&gt;Welcome HTML5!&lt;/h2&gt;
+
+&lt;p&gt;CompliSpace Technology will be very busy in 2013 with big plans for extending the existing Fundamentals platform, as well as creating a few more products!&lt;/p&gt;
+
+&lt;p&gt;As I&amp;#8217;m sure you are aware, the Internet and web technology are continually growing and maturing. Of particular interest is the maturity of &lt;a href='http://en.wikipedia.org/wiki/Web_standards'&gt;web standards&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To ensure that CompliSpace positively contributes to good net citizenship and so we can deliver first class software, we will no longer be supporting older versions of web browsers that don&amp;#8217;t comply with modern standards as set out by the &lt;a href='http://en.wikipedia.org/wiki/WHATWG'&gt;Web Hypertext Application Technology Working Group&lt;/a&gt; (WHATWG).&lt;/p&gt;
+&lt;img style='width:400px; float:right; margin-top:1em;' src='https://developer.mozilla.org/files/563/Moz_ffx_openStandards_800x600.jpg' class='thumbnail' alt='' /&gt;
+&lt;h2 id='supported_browsers'&gt;Supported Browsers&lt;/h2&gt;
+
+&lt;p&gt;The list below shows the browsers that we will be officially supporting from January 2013. Older versions may work for you, but we will be unable to assist with any problems you may have while using unsupported browsers.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='https://www.google.com/intl/en/chrome/browser/'&gt;Google Chrome&lt;/a&gt; &amp;gt; 21&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.mozilla.org/en-US/firefox/new/'&gt;Mozilla Firefox&lt;/a&gt; &amp;gt; 15&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.apple.com/safari/'&gt;Apple Safari&lt;/a&gt; &amp;gt; 4&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.opera.com/'&gt;Opera&lt;/a&gt; &amp;gt; 10&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://windows.microsoft.com/en-AU/internet-explorer/download-ie'&gt;Internet Explorer&lt;/a&gt; &amp;gt;= 8 (does not include Windows XP or older)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='internet_explorer'&gt;Internet Explorer&lt;/h2&gt;
+
+&lt;p&gt;While version 8 of Internet Explorer is quite old, we recognise that many businesses have legacy applications that require older browsers such as IE 8.&lt;/p&gt;
+
+&lt;p&gt;If you must use Internet Explorer, we recommend that you always use the most recent version and to install the &lt;a href='http://www.google.com/chromeframe'&gt;Google Chrome Frame plugin&lt;/a&gt;. This plugin doesn&amp;#8217;t replace your browser, it just provides an improved way of displaying pages for sites that support the plugin, such as CompliSpace Fundamentals.&lt;/p&gt;
+
+&lt;h2 id='windows_xp'&gt;Windows XP&lt;/h2&gt;
+
+&lt;p&gt;From January 2013 we will no longer provide support for any version of Internet Explorer running on Windows XP.&lt;/p&gt;
+
+&lt;p&gt;Windows XP was released 11 years ago and reached the &lt;a href='http://windows.microsoft.com/en-us/windows/products/lifecycle#section_2'&gt;end of its mainstream support&lt;/a&gt; from Microsoft in April 2009. In an effort by Microsoft to move people away from their old operating system and purchase a more modern version of Windows they have built Internet Explorer version 9 and above to require Windows Vista or later.&lt;/p&gt;
+
+&lt;p&gt;Fortunately for those who still use Windows XP, the other browser vendors do allow their browsers to work on Windows XP. If you are using Windows XP, we recommend you use one of the other browsers.&lt;/p&gt;</description>
+				<link>http://complispace.github.com/article/2012/12/14/Browser-Support-For-2013.html</link>
+				<pubDate>Fri, 14 December 2012 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>November Fundamentals Updates</title>
+				<description>&lt;h2 id='schedule'&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;November updates are scheduled to take place on Thursday 13th December with no disruption to services expected. If a client has unusual behaviour, be sure to have them &lt;a href='http://www.wikihow.com/Clear-Your-Browser&amp;apos;s-Cache'&gt;clear their cache&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id='change_log'&gt;Change Log&lt;/h2&gt;
+
+&lt;p&gt;This month there are 11 specific issues.&lt;/p&gt;
+
+&lt;h3 id='issue668_adding_photos_to_the_staff_directory'&gt;Issue-668: Adding photos to the staff directory&lt;/h3&gt;
+
+&lt;p&gt;A bug has been fixed that stopped the addition of photos to a staff directory entry.&lt;/p&gt;
+
+&lt;h3 id='issue664_complaints_manager'&gt;Issue-664: Complaints Manager&lt;/h3&gt;
+
+&lt;p&gt;Under some circumstances the complaints manager was not showing all complaints. This has been fixed.&lt;/p&gt;
+
+&lt;h3 id='issue662_access_to_incident_register'&gt;Issue-662: Access to Incident Register&lt;/h3&gt;
+
+&lt;p&gt;In some cases access to the incident register was being denied to general users. This has been fixed.&lt;/p&gt;
+
+&lt;h3 id='issue658_password_reset_case_sensitivity'&gt;Issue-658: Password Reset Case Sensitivity&lt;/h3&gt;
+
+&lt;p&gt;The password reset mechanism was overly strict in requiring an exact case match for the email address. Email addresses are not case sensitive so this has been rectified.&lt;/p&gt;
+
+&lt;h3 id='issue652_rss_feed'&gt;Issue-652: RSS Feed&lt;/h3&gt;
+
+&lt;p&gt;A &amp;#8216;custom app&amp;#8217; for allowing the embedding of RSS feeds is now available.&lt;/p&gt;
+
+&lt;h3 id='issue688_decouple_database'&gt;Issue-688: Decouple Database&lt;/h3&gt;
+
+&lt;p&gt;Improvement on our hosting infrastructure has allowed us to decouple the database. This is an infrastructural improvement.&lt;/p&gt;
+
+&lt;h3 id='issue687_improved_sql'&gt;Issue-687: Improved SQL&lt;/h3&gt;
+
+&lt;p&gt;Improvements to SQL has resulted in some pages that were previously taking several seconds to render are now rendered in less that half a second.&lt;/p&gt;
+
+&lt;h3 id='issue673_sitemap_updates_for_operations'&gt;Issue-673: Sitemap Updates for Operations&lt;/h3&gt;
+
+&lt;p&gt;Certain CompliSpace Operations functions on the sitemap have been improved.&lt;/p&gt;
+
+&lt;h3 id='issue690_versioning_note_on_printed_pages'&gt;Issue-690: Versioning Note On Printed Pages&lt;/h3&gt;
+
+&lt;p&gt;A note is now on the top of the first printed page advising that the printed version is not under version control and to refer to the Fundamentals site for the most recent version.&lt;/p&gt;
+
+&lt;h3 id='issue671_sitemap_draft_pages'&gt;Issue-671: Sitemap Draft Pages&lt;/h3&gt;
+
+&lt;p&gt;The behavior of the show/hide drafted pages has been modified for use in the sitemap. Using this button in the sitemap when in edit mode will show/hide drafted pages in the sitemap itself rather than drafted items on the sitemap page.&lt;/p&gt;
+
+&lt;h3 id='issue685_file_updates_being_reported'&gt;Issue-685: File Updates Being Reported&lt;/h3&gt;
+
+&lt;p&gt;In some cases changing only a file is not showing up affected pages in the publish site report. This has been addressed.&lt;/p&gt;</description>
+				<link>http://complispace.github.com/update/2012/12/11/November-Updates.html</link>
+				<pubDate>Tue, 11 December 2012 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>October Fundamentals Updates</title>
+				<description>&lt;h2 id='schedule'&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;October updates are scheduled to take place on Thursday 25th October with no disruption to services expected. If a client has unusual behaviour, be sure to have them &lt;a href='http://www.wikihow.com/Clear-Your-Browser&amp;apos;s-Cache'&gt;clear their cache&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id='change_log'&gt;Change Log&lt;/h2&gt;
+
+&lt;p&gt;This month there are 9 specific issues.&lt;/p&gt;
+
+&lt;h3 id='issue583_updates_to_internal_sql'&gt;Issue-583: Updates to internal SQL&lt;/h3&gt;
+
+&lt;p&gt;Some updates to how data is handled&lt;/p&gt;
+
+&lt;h3 id='issue572_updated_the_custom_apps_to_use__instead_of_'&gt;Issue-572: Updated the &amp;#8216;custom apps&amp;#8217; to use &lt;code&gt;GET&lt;/code&gt; instead of &lt;code&gt;POST&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;This means that when you use any of the custom applications (such as injury register) to view an item the link to that specific item can be kept and possible emailed (you will need to be logged in to view it of course)&lt;/p&gt;
+
+&lt;h3 id='issue571_correct_custom_app_redirection_after_logging_in'&gt;Issue-571: Correct custom app redirection after logging in&lt;/h3&gt;
+
+&lt;p&gt;When receiving and email that links to an item in a custom app, you will now be redirected to the right page after logging in.&lt;/p&gt;
+
+&lt;h3 id='issue559_disabled_browserid_for_older_browsers'&gt;Issue-559: Disabled BrowserID for older browsers&lt;/h3&gt;
+
+&lt;p&gt;To avoid confusion we now disable the Browser ID login for users with older browsers. If you have an older browser we will display a message explaining why this option is not available.&lt;/p&gt;
+
+&lt;h3 id='issue576_add_id_to_compliflow_lists_and_forms'&gt;Issue-576: Add ID to CompliFlow lists and forms&lt;/h3&gt;
+
+&lt;p&gt;The internally generated ID that is unique to each CompliFlow form is now displayed for your reference.&lt;/p&gt;
+
+&lt;h3 id='issue560_compliflow_export'&gt;Issue-560: CompliFlow Export&lt;/h3&gt;
+
+&lt;p&gt;Under certain circumstances some CompliFlow reports were not exporting. This has been fixed.&lt;/p&gt;
+
+&lt;h3 id='issue636_search_button_not_working'&gt;Issue-636: Search button not working&lt;/h3&gt;
+
+&lt;p&gt;Under certain conditions the search button was not working. This has been fixed.&lt;/p&gt;
+
+&lt;h3 id='issue634_breadcrumbs_not_working'&gt;Issue-634: Breadcrumbs not working&lt;/h3&gt;
+
+&lt;p&gt;Under certain conditions the bread crumb navigation was not displaying on custom applications. This has now been fixed.&lt;/p&gt;
+
+&lt;h3 id='issue629_login_panel_redirect'&gt;Issue-629: Login panel redirect&lt;/h3&gt;
+
+&lt;p&gt;The correct behaviour for login panels is to redirect a logged in user back to the home page. This was occurring even in edit mode which was confusing. The redirect feature will now not work in edit mode.&lt;/p&gt;</description>
+				<link>http://complispace.github.com/update/2012/10/24/October-Updates.html</link>
+				<pubDate>Wed, 24 October 2012 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>August Fundamentals Updates</title>
+				<description>&lt;h2 id='schedule'&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;August updates are scheduled to take place on Tuesday 11th September with no disruption to services expected. If a client has unusual behaviour, be sure to have them &lt;a href='http://www.wikihow.com/Clear-Your-Browser&amp;apos;s-Cache'&gt;clear their cache&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id='change_log'&gt;Change Log&lt;/h2&gt;
+
+&lt;p&gt;This month there are 5 specific issues.&lt;/p&gt;
+
+&lt;h3 id='issue521_adding_extra_fields_under_dropdown_box_in_injuryincident_tool'&gt;Issue-521: Adding Extra Fields Under Drop-down box in Injury/Incident tool&lt;/h3&gt;
+
+&lt;p&gt;The &amp;#8220;Nature of Incident&amp;#8221; drop down box can be customised for your needs. Please contact support if you would like this modified.&lt;/p&gt;
+
+&lt;h3 id='issue529_normalise_internal_api'&gt;Issue-529: Normalise internal API&lt;/h3&gt;
+
+&lt;p&gt;In some cases the &amp;#8220;Online Library&amp;#8221; was not accepting new categories. This has now been corrected.&lt;/p&gt;
+
+&lt;h3 id='issue517_failed_login_attempt_message_when_login_not_yet_attempted'&gt;Issue-517: Failed Login Attempt message when login not yet attempted&lt;/h3&gt;
+
+&lt;p&gt;When first visiting a page before signing in, a message was being displayed saying that your login failed. This is no longer displayed until you have tried to sign in and failed.&lt;/p&gt;
+
+&lt;h3 id='issue522_various_improvements_to_underlying_sql'&gt;Issue-522: Various improvements to underlying SQL&lt;/h3&gt;
+
+&lt;p&gt;Internal SQL has been updated to be more streamlined.&lt;/p&gt;
+
+&lt;h3 id='issue531_extremely_long_names_now_wrap_better_in_the_previousnext_navigation_bar'&gt;Issue-531: Extremely long names now wrap better in the previous/next navigation bar&lt;/h3&gt;
+
+&lt;p&gt;Extremely long page names were breaking the flow for the navigation bar. This has been improved to support better wrapping.&lt;/p&gt;
+&lt;div class='alert alert-info'&gt;
+
+CompliSpace Technology strongly advises that for an improved user experience short,
+ descriptive names should be used for pages. Please see the 
+&lt;a href='http://styleguide.yahoo.com/'&gt;Yahoo! Style Guide&lt;/a&gt; for tips and articles on
+how to write for an online audience.
+
+&lt;/div&gt;</description>
+				<link>http://complispace.github.com/update/2012/09/07/August-Updates.html</link>
+				<pubDate>Fri, 07 September 2012 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>Receive Emails From CompliSpace Fundamentals</title>
+				<description>&lt;h2 id='standardised_email_addresses'&gt;Standardised Email Addresses&lt;/h2&gt;
+
+&lt;p&gt;In the &lt;a href='/Update/2012/05/30/May-Updates.html'&gt;May 2012 updates&lt;/a&gt; we standardised all emails being sent from the CompliSpace Fundamentals system. Please ensure that your personal and company spam filters are configured to allow the following email addresses:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;noreply@complispace.com&lt;/code&gt;&lt;br /&gt;&lt;code&gt;helpdesk@complispace.com&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Please consult your internal support on how to white list these email addresses&lt;/p&gt;</description>
+				<link>http://complispace.github.com/article/2012/08/01/Receive-Emails-From-CompliSpace-Fundamentals.html</link>
+				<pubDate>Wed, 01 August 2012 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>June Fundamentals Updates</title>
+				<description>&lt;h2 id='schedule'&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;June updates are scheduled to take place on Thursday 28th June with no disruption to services expected. If a client has unusual behaviour, be sure to have them &lt;a href='http://www.wikihow.com/Clear-Your-Browser&amp;apos;s-Cache'&gt;clear their cache&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id='change_log'&gt;Change Log&lt;/h2&gt;
+
+&lt;p&gt;This month there are 7 specific issues.&lt;/p&gt;
+
+&lt;h3 id='issue475_locked_page_message'&gt;Issue-475: Locked page message&lt;/h3&gt;
+
+&lt;p&gt;The message on locked pages is now more useful by describing the reason the page is locked rather than just saying that it is.&lt;/p&gt;
+
+&lt;h3 id='issue479_normalise_internal_api'&gt;Issue-479: Normalise internal API&lt;/h3&gt;
+
+&lt;p&gt;Internally we have improved the usage of certain database calls by standardizing on a single entry point.&lt;/p&gt;
+
+&lt;h3 id='issue489_css_for_logged_inout_state'&gt;Issue-489: CSS for logged in/out state&lt;/h3&gt;
+
+&lt;p&gt;We now have a CSS class for user authentication state. Useful for clients wishing to change the format or layout of the login page.&lt;/p&gt;
+
+&lt;h3 id='issue490_improved_password_security_check'&gt;Issue-490: Improved password security check&lt;/h3&gt;
+
+&lt;p&gt;Passwords can no longer be dictionary words. Please ensure you use adequate complexity on your passwords. CompliSpace Technology recommends the use of a pass &lt;em&gt;phrase&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3 id='issue499_complaints_custom_app_now_allows_for_customised_third_party_status'&gt;Issue-499: Complaints custom app now allows for customised &amp;#8220;Third Party Status&amp;#8221;&lt;/h3&gt;
+
+&lt;p&gt;The &amp;#8220;Third Party Status&amp;#8221; is now taken from the database instead of being hard coded. This allows customisation on this field for individual clients.&lt;/p&gt;
+
+&lt;h3 id='issue505_javascript_incompatability_with_the_ancient_ie7_browser'&gt;Issue-505: JavaScript incompatability with the ancient IE7 browser&lt;/h3&gt;
+
+&lt;p&gt;An incompatability with the JavaScript code and the ancient Internet Explorer 7 browser has been addressed.&lt;/p&gt;
+&lt;div class='alert alert-error'&gt;
+
+CompliSpace Technology strongly advises that you should use a modern browser for
+all your web browsing. If you &lt;b&gt;must&lt;/b&gt; use Internet Explorer, use the most &lt;a target='_blank' href='http://windows.microsoft.com/en-au/internet-explorer/downloads/ie' rel='nofollow'&gt;recent version&lt;/a&gt;
+or install the &lt;a target='_blank' href='http://www.google.com/chromeframe/eula.html?prefersystemlevel=true' rel='nofollow'&gt;Google Chrome Frame plugin&lt;/a&gt;.
+
+&lt;/div&gt;
+&lt;h3 id='issue500_display_table_type_layoutdata_when_creating_a_table'&gt;Issue-500: Display table type (layout/data) when creating a table&lt;/h3&gt;
+
+&lt;p&gt;The option for setting a table as being a data table or layout table is now available when creating a table as well as when editing a table.&lt;/p&gt;</description>
+				<link>http://complispace.github.com/update/2012/06/19/June-Updates.html</link>
+				<pubDate>Tue, 19 June 2012 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>May Fundamentals Updates</title>
+				<description>&lt;h2 id='schedule'&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;May updates are scheduled to take place on Thursday 31st May with no disruption to services expected. If a client has unusual behaviour, be sure to have them &lt;a href='http://www.wikihow.com/Clear-Your-Browser&amp;apos;s-Cache'&gt;clear their cache&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id='change_log'&gt;Change Log&lt;/h2&gt;
+
+&lt;p&gt;This month there are 5 specific issues.&lt;/p&gt;
+
+&lt;h3 id='issue468_non_latin_character_problems'&gt;Issue-468: Non latin character problems&lt;/h3&gt;
+
+&lt;p&gt;After previous security upgrades, certain non-latin characters were not being rendered. These characters are now being displayed as expected.&lt;/p&gt;
+
+&lt;h3 id='issue465_bungarra_based_application_not_redirecting_after_authentication'&gt;Issue-465: &amp;#8216;Bungarra&amp;#8217; based application not redirecting after authentication&lt;/h3&gt;
+
+&lt;p&gt;When a user requested a page but was not already authenticated they were not being redirected back to the original page they requested.&lt;/p&gt;
+
+&lt;p&gt;Redirection after authentication on Bungarra based applications are now working. Notably this improves the usability of CompliFlow when following assigned links in emails.&lt;/p&gt;
+
+&lt;h3 id='issue449_removal_of_debug_email'&gt;Issue-449: Removal of debug email&lt;/h3&gt;
+
+&lt;p&gt;One custom application was sending debug data to development. This is no longer the case.&lt;/p&gt;
+
+&lt;h3 id='issue467_table_usage_warning'&gt;Issue-467: Table usage warning&lt;/h3&gt;
+
+&lt;p&gt;Warnings are now displayed when using tables advising that tables should only be used for displaying tabular data.&lt;/p&gt;
+
+&lt;p&gt;It is also clearer in showing the settings that should be included if a table &lt;em&gt;must&lt;/em&gt; be used for layout purposes only&lt;/p&gt;
+
+&lt;h3 id='issue483_email_address_normalisation'&gt;Issue-483: Email address normalisation&lt;/h3&gt;
+
+&lt;p&gt;Email addresses that the Fundamentals system sends from have been normalised. This will help customers improve their mail system spam filters to allow legitimate Fundamentals emails.&lt;/p&gt;
+
+&lt;p&gt;A further post will be made available shortly listing the valid email addresses&lt;/p&gt;</description>
+				<link>http://complispace.github.com/update/2012/05/30/May-Updates.html</link>
+				<pubDate>Wed, 30 May 2012 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>April Fundamentals Updates</title>
+				<description>&lt;h2 id='schedule'&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;April updates are scheduled to take place on Wednesday 25th April with no disruption to services expected. If a client has unusual behaviour, be sure to have them &lt;a href='http://www.wikihow.com/Clear-Your-Browser&amp;apos;s-Cache'&gt;clear their cache&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Please note that security updates are being applied to hosting servers on this day with some scheduled down time, but this is not related to the updates mentioned here.&lt;/p&gt;
+
+&lt;h2 id='change_log'&gt;Change Log&lt;/h2&gt;
+
+&lt;p&gt;This month there are 8 specific issues.&lt;/p&gt;
+
+&lt;h3 id='issue415_backforward_navigation_broken_when_using_charsets_outside_of_utf8'&gt;Issue-415: Back/Forward navigation broken when using charsets outside of UTF-8&lt;/h3&gt;
+
+&lt;p&gt;Non-standard UTF8 characters in page titles were causing the navigation links to display broken. These characters are now stripped.&lt;/p&gt;
+
+&lt;h3 id='issue_427_google_search_form_now_defaults_to_search_the_world'&gt;Issue 427: Google Search form now defaults to &amp;#8216;Search the World&amp;#8217;&lt;/h3&gt;
+
+&lt;p&gt;Many customers have asked that the Google Search form (content item) default to &amp;#8216;Search the World&amp;#8217; instead of &amp;#8216;Search Australia&amp;#8217;&lt;/p&gt;
+
+&lt;h3 id='issue_433_older_adobe_pdf_plugin_failing_to_load_large_pdf_files'&gt;Issue 433: Older Adobe PDF plugin failing to load large PDF files&lt;/h3&gt;
+
+&lt;p&gt;Older PDF plugins failed to load large PDF files. This has been addressed.&lt;/p&gt;
+
+&lt;h3 id='issue_437_photo_selection_in_staff_directory_not_working'&gt;Issue 437: Photo selection in Staff Directory not working&lt;/h3&gt;
+
+&lt;p&gt;In some cases the staff directory photo selection was not working. This has now been addressed.&lt;/p&gt;
+
+&lt;h3 id='issue_439_sitemap_actions_not_working_on_sites_with_many_pages'&gt;Issue 439: Sitemap actions not working on sites with many pages&lt;/h3&gt;
+
+&lt;p&gt;Sites with large numbers of pages were having problems with the sitemap. This is no longer a problem.&lt;/p&gt;
+
+&lt;h3 id='issue_451_remove_new_button_from_header_q2a_link'&gt;Issue 451: Remove &amp;#8216;new&amp;#8217; button from header Q2A link&lt;/h3&gt;
+
+&lt;p&gt;Since the Q2A is no longer new, the label has been removed.&lt;/p&gt;
+
+&lt;h3 id='issue_434_clients_not_being_able_to_reset_their_own_passwords'&gt;Issue 434: Clients not being able to reset their own passwords&lt;/h3&gt;
+
+&lt;p&gt;Some clients were having problems when trying to reset their passwords. This has been fixed.&lt;/p&gt;
+
+&lt;h3 id='issue_443_assessment_report_resolution_is_too_fine_grained'&gt;Issue 443: Assessment report resolution is too fine grained&lt;/h3&gt;
+
+&lt;p&gt;Assessment report resolution now works better with smaller intervals.&lt;/p&gt;</description>
+				<link>http://complispace.github.com/update/2012/04/24/April-Updates.html</link>
+				<pubDate>Tue, 24 April 2012 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>January Fundamentals Updates</title>
+				<description>&lt;h2 id='schedule'&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;January updates are scheduled to take place on Monday 6th February with no disruption to services expected. If a client has unusual behaviour, be sure to have them &lt;a href='http://www.wikihow.com/Clear-Your-Browser&amp;apos;s-Cache'&gt;clear their cache&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id='change_log'&gt;Change Log&lt;/h2&gt;
+
+&lt;p&gt;This month there are 6 specific issues.&lt;/p&gt;
+
+&lt;h3 id='issue_381__updated_or_new_bubble_for_fundamentals_pages'&gt;Issue 381 - &amp;#8220;Updated&amp;#8221; or &amp;#8220;New&amp;#8221; bubble for Fundamentals pages&lt;/h3&gt;
+
+&lt;p&gt;After a page has been published it will now have a bubble in the top right corner marking the page as &amp;#8220;New&amp;#8221; or &amp;#8220;Updated&amp;#8221;.&lt;/p&gt;
+
+&lt;p&gt;The appropriate label will be applied for 2 weeks after the page is published.&lt;/p&gt;
+
+&lt;h3 id='issue_384__link_to_training_room_in_automatic_test_emails'&gt;Issue 384 - Link to Training Room in Automatic Test emails&lt;/h3&gt;
+
+&lt;p&gt;Previously the automated email sent to a user when assigned a test had a link to the Tests Assigned page. It now also includes a link to the training room with the text:&lt;/p&gt;
+&lt;div class='alert alert-info'&gt;
+For more information on this topic, please visit the &lt;strong&gt;training room&lt;/strong&gt;.
+&lt;/div&gt;
+&lt;p&gt;&amp;#8230;where the words &lt;strong&gt;training room&lt;/strong&gt; is a link to the Fundamentals Training Room page.&lt;/p&gt;
+
+&lt;h3 id='issue_385__compliflow_questions_numbering_not_incrementing'&gt;Issue 385 - CompliFlow Questions Numbering Not Incrementing&lt;/h3&gt;
+
+&lt;p&gt;Opera based browsers were not increasing the question number on CompliFlow forms.&lt;/p&gt;
+
+&lt;p&gt;This has been corrected.&lt;/p&gt;
+
+&lt;h3 id='issue_394__browser_education_links_not_printed'&gt;Issue 394 - Browser education links not printed&lt;/h3&gt;
+
+&lt;p&gt;The links &lt;a href='http://whichbrowserforme.org/'&gt;Which browser for me?&lt;/a&gt; and &lt;a href='http://whatbrowser.org/'&gt;What exactly is a web browser?&lt;/a&gt; no longer appear when printed.&lt;/p&gt;
+
+&lt;h3 id='issue_398__show_google_chrome_frame_plugin_link_for_ie__version_8'&gt;Issue 398 - Show Google chrome frame plugin link for IE &amp;lt; Version 8&lt;/h3&gt;
+
+&lt;p&gt;The advise to install Chrome Frame Plugin link will now only appear for IE browsers older than version 8.&lt;/p&gt;
+
+&lt;p&gt;CompliSpace Technology strongly encourages &lt;strong&gt;all internet explorer users&lt;/strong&gt; to install the &lt;a href='http://code.google.com/chrome/chromeframe/'&gt;Google Chrome Frame Plugin&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id='issue_406__support_for_ios_media_streaming'&gt;Issue 406 - Support for iOS media streaming&lt;/h3&gt;
+
+&lt;p&gt;The underlying Komodo CMS system has been patched to support the streaming methods used by the iOS platform. Streaming media such as MP4 movies will now work correctly on devices that use iOS.&lt;/p&gt;
+
+&lt;p&gt;For this to work correctly, please ensure that the link to the media file has the option &amp;#8216;Force Download&amp;#8217; set to &amp;#8216;No&amp;#8217;. If this is set to &amp;#8216;Yes&amp;#8217; media streaming will not work.&lt;/p&gt;</description>
+				<link>http://complispace.github.com/update/2012/01/31/January-Updates.html</link>
+				<pubDate>Tue, 31 January 2012 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>November Fundamentals Updates</title>
+				<description>&lt;h2 id='schedule'&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;November updates have been completed with no disruption to services. If a client has unexpected behaviour, be sure to have them &lt;a href='http://www.wikihow.com/Clear-Your-Browser&amp;apos;s-Cache'&gt;clear their cache&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id='change_log'&gt;Change Log&lt;/h2&gt;
+
+&lt;p&gt;This month there are 5 specific issues, plus some infrastructure changes.&lt;/p&gt;
+
+&lt;h2 id='infrastructure_changes'&gt;Infrastructure Changes&lt;/h2&gt;
+
+&lt;p&gt;We&amp;#8217;ve been working hard to identify how we can improve performance while maintaining our high standards of security and have made some tweaks to our DNS and web server headers.&lt;/p&gt;
+
+&lt;p&gt;You will find content is delivered faster, and if your organisation uses a caching proxy you will gain even more efficiency as your cache is primed.&lt;/p&gt;
+
+&lt;h3 id='issue_376__merge_fields_not_correctly_escaping_dollar_symbols_'&gt;Issue 376 - Merge Fields not correctly escaping dollar symbols ($)&lt;/h3&gt;
+
+&lt;p&gt;In some cases the use of a dollar symbol ($) followed immediately by two or more numeric digits caused the first 2 digits to disappear.&lt;/p&gt;
+
+&lt;p&gt;This has been corrected.&lt;/p&gt;
+
+&lt;h3 id='issue_377__link_for_administrators_to_visit_q2a'&gt;Issue 377 - Link for administrators to visit Q2A&lt;/h3&gt;
+
+&lt;p&gt;We&amp;#8217;ve added in a quick link at the top of each page for administrators to easily access our &lt;a target='q2a' href='http://q2a.complispace.net'&gt;CompliSpace Questions 
+to Answers&lt;/a&gt; community driven forum. &lt;a href='http://complispace.github.com/Article/2011/11/10/Community-Questions-And-Answers.html'&gt;learn more&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The &amp;#8216;CompliSpace Helpdesk&amp;#8217; link also shows users the 5 most recent questions with easy access to the provided answer.&lt;/p&gt;
+&lt;div class='well'&gt;
+&lt;strong&gt;Try it now! &lt;a target='q2a' href='http://q2a.complispace.net'&gt;CompliSpace Questions to Answers&lt;/a&gt;&lt;/strong&gt;
+&lt;a target='q2a' href='http://q2a.complispace.net'&gt;&lt;img style='margin-top: 1em' src='/images/q2a-screenshot.png' alt='Questions to Answers' /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;h3 id='issue_387__implement_browserid'&gt;Issue 387 - Implement BrowserID&lt;/h3&gt;
+
+&lt;p&gt;CompliSpace Fundamentals now supports the BrowserID single-sign-on protocol! If the contact e-mail address associated with your sign in username matches you can use this to easily sign in.&lt;/p&gt;
+
+&lt;p&gt;Please not that if your organisation has assigned the same contact e-mail address to multiple usernames, then to ensure security, CompliSpace Fundamentals will reject the sign in.&lt;/p&gt;
+
+&lt;p&gt;This has been tested to work with the following &lt;mark&gt;minimum browser versions&lt;/mark&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Firefox 3.6&lt;/li&gt;
+
+&lt;li&gt;Google Chrome 12.0&lt;/li&gt;
+
+&lt;li&gt;Safari 4.0&lt;/li&gt;
+
+&lt;li&gt;Internet Explorer 9.0&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The &lt;a href='http://browserid.org/about'&gt;BrowserID&lt;/a&gt; team have several &lt;a href='https://github.com/mozilla/browserid/issues/search?q=relay+frame'&gt;open tickets&lt;/a&gt; to support the Opera browser.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://browserid.org/about'&gt;BrowserID&lt;/a&gt; is a very easy way to log into web sites by proving you own an email address. &lt;a href='http://browserid.org/about'&gt;BrowserID&lt;/a&gt; is designed to be tightly integrated into your web browser for ease-of-use, and it is designed to be privacy-protecting: the only data exchanged is that which is strictly necessary to log in. &lt;a href='http://browserid.org/about'&gt;BrowserID&lt;/a&gt; is a product of &lt;a href='http://identity.mozilla.com/'&gt;Mozilla&lt;/a&gt; who are working to standardize it so that other browser vendors can, if they choose, easily integrate it. In the meantime, &lt;a href='http://identity.mozilla.com/'&gt;Mozilla&lt;/a&gt; provides a simple JavaScript mechanism that lets web sites use &lt;a href='http://browserid.org/about'&gt;BrowserID&lt;/a&gt; right away, across all modern browsers, on desktop and on mobile.&lt;/p&gt;
+
+&lt;h3 id='issue_386__compliflow_groups_limiting_group_displays'&gt;Issue 386 - CompliFlow Groups Limiting Group Displays&lt;/h3&gt;
+
+&lt;p&gt;In some cases the CompliFlow Groups editor was truncating the list of groups to ten. This has been resolved.&lt;/p&gt;</description>
+				<link>http://complispace.github.com/update/2011/12/06/November-Updates.html</link>
+				<pubDate>Tue, 06 December 2011 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>Fundamentals Supported File Types</title>
+				<description>&lt;p&gt;An important question that is not very often asked is, &amp;#8220;What file types does the CompliSpace Fundamentals platform support?&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;I thought I would put it into a post for easy referencem, so here goes.&lt;/p&gt;
+
+&lt;h2 id='storage_limits'&gt;Storage Limits&lt;/h2&gt;
+
+&lt;p&gt;Individual files uploaded to CompliSpace Fundamentals can&amp;#8217;t be greater than 200M.&lt;/p&gt;
+
+&lt;p&gt;Total storage is 5G, but this is a soft limit. No customer has yet reached this limit.&lt;/p&gt;
+
+&lt;h2 id='file_types'&gt;File Types&lt;/h2&gt;
+&lt;table class='table-striped table-bordered'&gt;
+&lt;tr&gt;
+&lt;th&gt;File Family&lt;/th&gt;&lt;th&gt;Extension&lt;/th&gt;&lt;th&gt;Type&lt;/th&gt;
+&lt;/tr&gt;&lt;tr&gt;
+&lt;td&gt;Image&lt;/td&gt;
+&lt;td&gt;jpg&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/0220vh_'&gt;JPEG&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Image&lt;/td&gt;
+&lt;td&gt;jpeg&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/0220vh_'&gt;JPEG&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Image&lt;/td&gt;
+&lt;td&gt;gif&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/03bfb'&gt;GIF&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Image&lt;/td&gt;
+&lt;td&gt;png&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/06279'&gt;PNG&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Image&lt;/td&gt;
+&lt;td&gt;ico&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/06mvj8'&gt;ICO&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Image&lt;/td&gt;
+&lt;td&gt;tiff&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/012h7d'&gt;Tagged Image File Format&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Image&lt;/td&gt;
+&lt;td&gt;tif&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/012h7d'&gt;Tagged Image File Format&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Image&lt;/td&gt;
+&lt;td&gt;eps&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/012h7x'&gt;Encapsulated PostScript&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Quicktime&lt;/td&gt;
+&lt;td&gt;mov&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/069n5'&gt;QuickTime&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Quicktime&lt;/td&gt;
+&lt;td&gt;m4v&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/047lt7g'&gt;M4V&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Quicktime&lt;/td&gt;
+&lt;td&gt;avi&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/095df'&gt;Audio Video Interleave&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Quicktime&lt;/td&gt;
+&lt;td&gt;mpeg&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/0514p'&gt;Moving Picture Experts Group&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Quicktime&lt;/td&gt;
+&lt;td&gt;mp3&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/04zc0'&gt;MP3&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Quicktime&lt;/td&gt;
+&lt;td&gt;mpg&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/0514p'&gt;Moving Picture Experts Group&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Quicktime&lt;/td&gt;
+&lt;td&gt;moov&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/069n5'&gt;QuickTime&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Quicktime&lt;/td&gt;
+&lt;td&gt;movie&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l0bgf'&gt;Movie&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Quicktime&lt;/td&gt;
+&lt;td&gt;qt&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/069n5'&gt;QuickTime&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Quicktime&lt;/td&gt;
+&lt;td&gt;qtm&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l037k'&gt;Qtm&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Quicktime&lt;/td&gt;
+&lt;td&gt;wav&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/086m_'&gt;Waveform Audio&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Quicktime&lt;/td&gt;
+&lt;td&gt;aiff&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/0hm7z'&gt;AIFF&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Quicktime&lt;/td&gt;
+&lt;td&gt;avr&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;avr&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Quicktime&lt;/td&gt;
+&lt;td&gt;dv&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l0cqb'&gt;Dv&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Quicktime&lt;/td&gt;
+&lt;td&gt;mp4&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02kqnb'&gt;MPEG-4 Part 14&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Quicktime&lt;/td&gt;
+&lt;td&gt;3gp&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/04bnv8'&gt;3GP&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Window Media&lt;/td&gt;
+&lt;td&gt;asf&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/01qjk7'&gt;Advanced Systems Format&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Window Media&lt;/td&gt;
+&lt;td&gt;asx&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l0kpd'&gt;Asx&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Window Media&lt;/td&gt;
+&lt;td&gt;wax&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l093k'&gt;Wax&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Window Media&lt;/td&gt;
+&lt;td&gt;wm&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;wm&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Window Media&lt;/td&gt;
+&lt;td&gt;wma&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/086t0'&gt;Windows Media Audio&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Window Media&lt;/td&gt;
+&lt;td&gt;wmd&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l0kk7'&gt;Wmd&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Window Media&lt;/td&gt;
+&lt;td&gt;wmp&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;wmp&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Window Media&lt;/td&gt;
+&lt;td&gt;wmv&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/01gt3p'&gt;Windows Media Video&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Window Media&lt;/td&gt;
+&lt;td&gt;wmx&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l05h_'&gt;Wmx&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Movie&lt;/td&gt;
+&lt;td&gt;mov&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l0dyd'&gt;Mov&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Movie&lt;/td&gt;
+&lt;td&gt;m4v&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/047lt7g'&gt;M4V&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Movie&lt;/td&gt;
+&lt;td&gt;avi&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/095df'&gt;Audio Video Interleave&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Movie&lt;/td&gt;
+&lt;td&gt;mpg&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/05182'&gt;MPEG-4&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Movie&lt;/td&gt;
+&lt;td&gt;moov&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/069n5'&gt;QuickTime&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Movie&lt;/td&gt;
+&lt;td&gt;movie&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l099c'&gt;Movie&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Movie&lt;/td&gt;
+&lt;td&gt;qt&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/069n5'&gt;QuickTime&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Movie&lt;/td&gt;
+&lt;td&gt;qtm&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l037k'&gt;Qtm&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Movie&lt;/td&gt;
+&lt;td&gt;avr&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;avr&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Movie&lt;/td&gt;
+&lt;td&gt;dv&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/095df'&gt;Audio Video Interleave&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Movie&lt;/td&gt;
+&lt;td&gt;mp4&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02kqnb'&gt;MPEG-4 Part 14&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Movie&lt;/td&gt;
+&lt;td&gt;3gp&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/04bnv8'&gt;3GP&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Sound&lt;/td&gt;
+&lt;td&gt;mp3&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/04zc0'&gt;MP3&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Sound&lt;/td&gt;
+&lt;td&gt;wav&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/086m_'&gt;Waveform Audio&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Sound&lt;/td&gt;
+&lt;td&gt;aiff&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/0hm7z'&gt;AIFF&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Sound&lt;/td&gt;
+&lt;td&gt;avr&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;avr&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Sound&lt;/td&gt;
+&lt;td&gt;dv&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/095df'&gt;Audio Video Interleave&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Sound&lt;/td&gt;
+&lt;td&gt;ac3&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/04yqyj'&gt;DVR-MS&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Flash&lt;/td&gt;
+&lt;td&gt;swf&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/0322zr'&gt;SWF&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Flash&lt;/td&gt;
+&lt;td&gt;flv&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/07gdhw'&gt;FLV&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Archive&lt;/td&gt;
+&lt;td&gt;ace&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/04klpn'&gt;ACE&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Archive&lt;/td&gt;
+&lt;td&gt;arj&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/0b4rf'&gt;ARJ&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Archive&lt;/td&gt;
+&lt;td&gt;bz2&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/0hjcb'&gt;Bzip2&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Archive&lt;/td&gt;
+&lt;td&gt;dmg&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/047fh53'&gt;Apple Disk Image&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Archive&lt;/td&gt;
+&lt;td&gt;hqx&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/03q0t8'&gt;BinHex&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Archive&lt;/td&gt;
+&lt;td&gt;jar&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/01nbtb'&gt;JAR&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Archive&lt;/td&gt;
+&lt;td&gt;lha&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/03pl5y'&gt;LHA&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Archive&lt;/td&gt;
+&lt;td&gt;lzh&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/03pl5y'&gt;LHA&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Archive&lt;/td&gt;
+&lt;td&gt;pkg&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l0hlh'&gt;Pkg&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Archive&lt;/td&gt;
+&lt;td&gt;rar&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/01t8v7'&gt;RAR&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Archive&lt;/td&gt;
+&lt;td&gt;sea&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l0fzk'&gt;Sea&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Archive&lt;/td&gt;
+&lt;td&gt;sit&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/0279jl'&gt;StuffIt&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Archive&lt;/td&gt;
+&lt;td&gt;sitx&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/0279jl'&gt;StuffIt&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Archive&lt;/td&gt;
+&lt;td&gt;sithqx&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;sithqx&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Archive&lt;/td&gt;
+&lt;td&gt;tar&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/013r8b'&gt;Tar&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Archive&lt;/td&gt;
+&lt;td&gt;tgz&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l08cd'&gt;Tgz&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Archive&lt;/td&gt;
+&lt;td&gt;gzip&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/03bzt'&gt;Gzip&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Archive&lt;/td&gt;
+&lt;td&gt;gz&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/03bzt'&gt;Gzip&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Archive&lt;/td&gt;
+&lt;td&gt;uu&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l0467'&gt;Uu Encoded&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Archive&lt;/td&gt;
+&lt;td&gt;uue&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;uue&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Archive&lt;/td&gt;
+&lt;td&gt;z&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/01d5my'&gt;Compress&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Archive&lt;/td&gt;
+&lt;td&gt;zip&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/019ssv'&gt;ZIP&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Archive&lt;/td&gt;
+&lt;td&gt;img&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/0l7y_'&gt;Disk image&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Archive&lt;/td&gt;
+&lt;td&gt;iso&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/01yr3k'&gt;ISO image&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;1st&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;1st&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;asc&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l06qh'&gt;Asc&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;asci&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;asci&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;ascii&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;ascii&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;csv&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02hznc'&gt;Comma-Separated Values&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;doc&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/052yv'&gt;Microsoft Word&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;dot&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l0jqt'&gt;Dot&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;faq&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;faq&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;lwp&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l0d8v'&gt;Lwp&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;mcw&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l0fgt'&gt;Mcw&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;me&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;me&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;msw&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l0dgg'&gt;Msw&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;now&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;now&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;nws&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l09yt'&gt;Nws&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;pcw&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l0ddz'&gt;Pcw&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;prt&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l02v6'&gt;Prt&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;pwd&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l0g8j'&gt;Pwd&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;readme&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;readme&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;rtt&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;rtt&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;rtx&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;rtx&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/06844'&gt;Plain text&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;txt&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/en/plain_text'&gt;Plain text&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;wpd&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l09y_'&gt;Wpd&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;csa&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;csa&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;etx&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l0dnn'&gt;Etx&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;ezm&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;ezm&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;mpp&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l095t'&gt;Mpp&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;mpx&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l09mf'&gt;Mpx&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;prj&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l03ft'&gt;Prj&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;ppt&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l03tm'&gt;Ppt&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;pps&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l0ddl'&gt;Pps&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;xl&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l0kf9'&gt;Xl&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;xls&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/052tr'&gt;Microsoft Excel&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;pxl&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l0jq1'&gt;Pxl&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;xlt&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/027qvcb'&gt;Xlt&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;pdf&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/0600q'&gt;Portable Document Format&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;lsc&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;lsc&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;lic&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;lic&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;grxml&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;grxml&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;vxml&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;vxml&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;rtf&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/06f50'&gt;Rich Text Format&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;html&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/03g20'&gt;HTML&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;htm&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/03g20'&gt;HTML&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;pdb&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/05p93fx'&gt;PDB&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;inf&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l0d9d'&gt;Inf&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;sco&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/052yv'&gt;Microsoft Word&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;xml&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/08745'&gt;XML&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;xslt&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/087l8'&gt;XSL Transformations&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;xsd&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;xsd&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;xlsx&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;xlsx&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;docx&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/052yv'&gt;Microsoft Word&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;pptx&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/06bq8d'&gt;PPTX&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;docm&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/026192p'&gt;Microsoft Office 2007 file extensions&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;dotx&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/026192p'&gt;Microsoft Office 2007 file extensions&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;dotm&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/026192p'&gt;Microsoft Office 2007 file extensions&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;xlsm&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/026192p'&gt;Microsoft Office 2007 file extensions&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;xltx&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/026192p'&gt;Microsoft Office 2007 file extensions&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;xltm&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;xltm&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;xlsb&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/026192p'&gt;Microsoft Office 2007 file extensions&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;xlam&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/026192p'&gt;Microsoft Office 2007 file extensions&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;pptm&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/026192p'&gt;Microsoft Office 2007 file extensions&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;potx&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;potx&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;potm&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;potm&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;ppam&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;ppam&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;ppsx&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/026192p'&gt;Microsoft Office 2007 file extensions&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;ppsm&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/026192p'&gt;Microsoft Office 2007 file extensions&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;accdb&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;accdb&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;accde&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;accde&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;accdt&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;accdt&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;accdr&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='#'&gt;accdr&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;ics&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/01rzrq'&gt;ICalendar&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Miscellaneous&lt;/td&gt;
+&lt;td&gt;vcs&lt;/td&gt;
+&lt;td&gt;&lt;a target='_blank' href='http://www.freebase.com/view/m/02l0jsh'&gt;Vcs&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</description>
+				<link>http://complispace.github.com/article/2011/11/29/Fundamentals-Supported-File-Types.html</link>
+				<pubDate>Tue, 29 November 2011 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>Community Driven "Questions To Answers"</title>
+				<description>&lt;p&gt;CompliSpace Technology and the Operations Team are pleased to announce the new community driven &lt;a href='http://q2a.complispace.net'&gt;Questions to Answers&lt;/a&gt; self-help site.&lt;/p&gt;
+&lt;div class='well'&gt;
+&lt;strong&gt;Try it now! &lt;a target='q2a' href='http://q2a.complispace.net'&gt;CompliSpace Questions to Answers&lt;/a&gt;&lt;/strong&gt;
+&lt;a target='q2a' href='http://q2a.complispace.net'&gt;&lt;img style='margin-top: 1em' src='/images/q2a-screenshot.png' alt='Questions to Answers' /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;h2 id='what_is_it_exactly'&gt;What Is It Exactly?&lt;/h2&gt;
+
+&lt;p&gt;This is a place where you as a CompliSpace Fundamentals customer can find answers to common (and not so common) questions, or ask a completely new question!&lt;/p&gt;
+
+&lt;p&gt;To help you get started, the Operations Team have already added a few questions such as:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://q2a.complispace.net/12/ive-locked-myself-out-there-way-can-reset-my-password-myself'&gt;I&amp;#8217;ve locked myself out! Is there a way I can reset my password myself?&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://q2a.complispace.net/11/changing-the-name-of-a-page'&gt;Changing the Name of a Page&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://q2a.complispace.net/5/how-do-i-put-a-page-into-the-navigation-bar'&gt;How do I put a page into the navigation bar?&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://q2a.complispace.net/4/ive-forgotten-how-to-add-a-new-page'&gt;I&amp;#8217;ve forgotten how to add a new page&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://q2a.complispace.net/3/what-does-that-google-chrome-message-mean'&gt;What does that Google Chrome Message Mean?&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://q2a.complispace.net/2/recieve-assessment-reports-tests-outstanding-already-done'&gt;Why do I receive Assessment Reports that say I have tests outstanding that I know I have already done?&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://q2a.complispace.net/1/how-do-i-replace-a-file'&gt;How do I replace a file?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='what_about_calling_for_support'&gt;What About Calling For Support?&lt;/h2&gt;
+
+&lt;p&gt;Nothing has changed with our phone support, however you may find that it is more convenient to find an answer online before calling.&lt;/p&gt;
+
+&lt;p&gt;We are excited to help the &lt;a href='http://q2a.complispace.net'&gt;Questions to Answers&lt;/a&gt; site grow and provide a rich and abundant source of support information!&lt;/p&gt;
+
+&lt;h2 id='how_do_i_use_it'&gt;How Do I Use It?&lt;/h2&gt;
+
+&lt;p&gt;Simply point your browser at the &lt;a href='http://q2a.complispace.net'&gt;Questions to Answers&lt;/a&gt; site and browse or search for a question. For searching, there is nothing more to it!&lt;/p&gt;
+
+&lt;h2 id='but_im_already_an_expert'&gt;But I&amp;#8217;m Already an Expert.&lt;/h2&gt;
+
+&lt;p&gt;If you&amp;#8217;re already an expert then it is a great place to see what others are doing and to share your experiences, tips and tricks.&lt;/p&gt;
+
+&lt;h2 id='operations_team_and_development_team_support'&gt;Operations Team and Development Team Support.&lt;/h2&gt;
+
+&lt;p&gt;Not only will the CompliSpace Operations Team be keeping an eye out to help with any of the more tricky questions, but Development will also contribute to the more technical ones.&lt;/p&gt;
+
+&lt;h2 id='thank_you'&gt;Thank You!&lt;/h2&gt;
+
+&lt;p&gt;From all of us in the Operations Team and CompliSpace Technology, We hope you find the &lt;a href='http://q2a.complispace.net'&gt;Questions to Answers&lt;/a&gt; site beneficial and fun!&lt;/p&gt;
+
+&lt;p&gt;Please feel free to send us any comments, questions or suggestions.&lt;/p&gt;</description>
+				<link>http://complispace.github.com/article/2011/11/10/Community-Questions-And-Answers.html</link>
+				<pubDate>Thu, 10 November 2011 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>October Fundamentals Updates</title>
+				<description>&lt;h2 id='schedule'&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;October updates have been completed with no disruption to services. If a client has unexpected behaviour, be sure to have them &lt;a href='http://www.wikihow.com/Clear-Your-Browser&amp;apos;s-Cache'&gt;clear their cache&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id='change_log'&gt;Change Log&lt;/h2&gt;
+
+&lt;p&gt;This month there are 3 specific issues with this update.&lt;/p&gt;
+
+&lt;h3 id='issue_362__update_legacy_komodo_flash_player'&gt;Issue 362 - Update Legacy Komodo Flash Player&lt;/h3&gt;
+
+&lt;p&gt;The default flash player used by the base Komodo CMS system fails to play some modern flash encoded movies.&lt;/p&gt;
+
+&lt;p&gt;This has been replaced with &lt;a href='http://flowplayer.org/'&gt;flowplayer&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id='issue_359__creation_of_extra_layout_templates'&gt;Issue 359 - Creation of Extra Layout Templates&lt;/h3&gt;
+
+&lt;p&gt;A few more page layouts have been created to help with laying out your content.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;CompliSpace Technology strongly advises against using tables for layout.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You can change the layout of a page by choosing from the Komodo menu: &lt;code&gt;Komodo &amp;gt; Page Properties &amp;gt; Template Settings&lt;/code&gt; and selecting the template from the &lt;code&gt;Page Template&lt;/code&gt; drop down.&lt;/p&gt;
+
+&lt;h3 id='issue_355__enhanced_security_for_referred_sign_in'&gt;Issue 355 - Enhanced Security for &lt;a href='/ReferredSignIn.html'&gt;Referred Sign In&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Security enhancements for the &lt;a href='/ReferredSignIn.html'&gt;referred sign in&lt;/a&gt; functionality have been implemented.&lt;/p&gt;</description>
+				<link>http://complispace.github.com/update/2011/11/08/October-Updates.html</link>
+				<pubDate>Tue, 08 November 2011 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>Why Information Security Is Important</title>
+				<description>&lt;p&gt;Today I had the opportunity to present a topic that has been on my mind for some time. As IT professionals we are always telling our users to use strong passwords, to be careful of all your online dealings, don&amp;#8217;t do this, don&amp;#8217;t do that&amp;#8230;blah blah blah&amp;#8230;.&lt;/p&gt;
+
+&lt;p&gt;But why do we have to repeat ourselves? I&amp;#8217;m thinking that perhaps we need to help people understand why information has value, just like we intuitively know the value of our credit cards or more tangible belongings. Once people understand the value of information, protecting it becomes second nature. Just like your ATM PIN number!&lt;/p&gt;
+
+&lt;p&gt;Below is a recording of the presentation and various links to the resources used.&lt;/p&gt;
+
+&lt;p&gt;I hope you find it useful, and I appreciate any comments you may have.&lt;/p&gt;
+&lt;iframe name='vidly-frame' width='450' src='http://vid.ly/embeded.html?link=2k8h4a&amp;autoplay=false' frameborder='0' height='253'&gt;&lt;a target='_blank' href='http://vid.ly/2k8h4a'&gt;&lt;img src='http://cf.cdn.vid.ly/2k8h4a/poster.jpg' /&gt;&lt;/a&gt;&lt;/iframe&gt;
+&lt;h2 id='presentation'&gt;Presentation&lt;/h2&gt;
+
+&lt;p&gt;Recording: &lt;a href='http://goo.gl/e0SXE'&gt;http://goo.gl/e0SXE&lt;/a&gt;&lt;br /&gt;The PREZI Presentation: &lt;a href='http://goo.gl/Vi42i'&gt;http://goo.gl/Vi42i&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id='link_resources'&gt;Link Resources:&lt;/h2&gt;
+
+&lt;p&gt;Google&amp;#8217;s Transparency Report: &lt;a href='http://goo.gl/WMMSe'&gt;http://goo.gl/WMMSe&lt;/a&gt;&lt;br /&gt;The Digital Beyond: &lt;a href='http://goo.gl/kLBmG'&gt;http://goo.gl/kLBmG&lt;/a&gt;&lt;br /&gt;Whose Stealing Your Data? &lt;a href='http://goo.gl/ZHK9M'&gt;http://goo.gl/ZHK9M&lt;/a&gt;&lt;br /&gt;Mindful Security (links to the norton infosec videos): &lt;a href='http://goo.gl/0HHJz'&gt;http://goo.gl/0HHJz&lt;/a&gt;&lt;br /&gt;On Guard On Line: &lt;a href='http://goo.gl/u6wKE'&gt;http://goo.gl/u6wKE&lt;/a&gt;&lt;/p&gt;</description>
+				<link>http://complispace.github.com/article/2011/10/04/Why-Information-Security-Is-Important.html</link>
+				<pubDate>Tue, 04 October 2011 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>September Maintenance</title>
+				<description>&lt;h2 id='schedule'&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;Server maintenance will begin at 19:00 GMT+10. During this time client sites will be locked. It is expected that the server maintenance will last around 6 hours.&lt;/p&gt;
+
+&lt;p&gt;There are also infrastructure upgrades where we will be updating our DNS records. Depending on client locally configured DNS server caching options these effects may take anywhere from as little as 6 hours to 48 hours to propagate. If you require, contact your local systems administrator and ask them to clear your organisation&amp;#8217;s DNS cache to help decrease the propagation time.&lt;/p&gt;
+
+&lt;h3 id='maintenance_details'&gt;Maintenance Details&lt;/h3&gt;
+
+&lt;p&gt;The scheduled maintenance will provide our customers a more responsive system, and improved security.&lt;/p&gt;
+
+&lt;p&gt;This maintenance will also provide a greater capacity to expand the CompliSpace services and software while providing an easier system to manage and maintain.&lt;/p&gt;
+
+&lt;h2 id='change_log'&gt;Change Log&lt;/h2&gt;
+
+&lt;p&gt;This month there are 11 specific issues that will be rolled out.&lt;/p&gt;
+
+&lt;h3 id='issue_265__refactor_to_external_library_use'&gt;Issue #265 - &lt;abbr title='By continuously improving the design of code, we make it easier and easier to work with. This is in sharp contrast to what typically happens: little refactoring and a great deal of attention paid to expediently adding new features. If you get into the hygienic habit of refactoring continuously, you&amp;apos;ll find that it is easier to extend and maintain code.'&gt;Refactor&lt;/abbr&gt; to external library use&lt;/h3&gt;
+
+&lt;p&gt;The code has been &lt;abbr title='By continuously improving the design of code, we make it easier and easier to work with. This is in sharp contrast to what typically happens: little refactoring and a great deal of attention paid to expediently adding new features. If you get into the hygienic habit of refactoring continuously, you&amp;apos;ll find that it is easier to extend and maintain code.'&gt;refactor&lt;/abbr&gt;ed to common libraries that have been extracted to a single location in the application stack instead of being duplicated across all sites. This will lead to more efficient upgrades.&lt;/p&gt;
+
+&lt;h3 id='issue_320__update_deprecated_function_calls'&gt;Issue #320 - Update &lt;a href='http://en.wikipedia.org/wiki/Deprecation'&gt;deprecated function calls&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Upgrade to our underlying application stack. For best impedance we have made updates to the core Komodo CMS that removes and replaces deprecated function calls ensuring full compatability with the most recent application stack. This will also provide ease of portability with future advances in the application stack and the CompliSpace Fundamentals program.&lt;/p&gt;
+
+&lt;h3 id='issue_321__refactor_for_partial_use_of_the_complispace_ghatanothoa_library'&gt;Issue #321 - &lt;abbr title='By continuously improving the design of code, we make it easier and easier to work with. This is in sharp contrast to what typically happens: little refactoring and a great deal of attention paid to expediently adding new features. If you get into the hygienic habit of refactoring continuously, you&amp;apos;ll find that it is easier to extend and maintain code.'&gt;Refactor&lt;/abbr&gt; for partial use of the CompliSpace Ghatanothoa library&lt;/h3&gt;
+
+&lt;p&gt;CompliSpace Technology has written an &lt;a href='http://en.wikipedia.org/wiki/Object-Relational_Mapping'&gt;ORM&lt;/a&gt; library to abstract the Komodo CMS database. CompliSpace specific extensions can use this library easily while providing easy forward porting in future development.&lt;/p&gt;
+
+&lt;h3 id='issue_322__upgrade_id3_library_to_190'&gt;Issue #322 - Upgrade ID3 library to 1.9.0&lt;/h3&gt;
+
+&lt;p&gt;This library is responsible for detecting file types and extracting meta-data in the file library. CompliSpace Technology has replaced the v1.7.5 (25th December 2005) used by Komodo CMS with this more recent v1.9.0 (20 June 2011).&lt;/p&gt;
+
+&lt;h3 id='issue_325__refactor_request_data_variable_usage_in_cgi_scripts'&gt;Issue #325 - &lt;abbr title='By continuously improving the design of code, we make it easier and easier to work with. This is in sharp contrast to what typically happens: little refactoring and a great deal of attention paid to expediently adding new features. If you get into the hygienic habit of refactoring continuously, you&amp;apos;ll find that it is easier to extend and maintain code.'&gt;Refactor&lt;/abbr&gt; request data variable usage in CGI scripts&lt;/h3&gt;
+
+&lt;p&gt;Variable usage has been &lt;abbr title='By continuously improving the design of code, we make it easier and easier to work with. This is in sharp contrast to what typically happens: little refactoring and a great deal of attention paid to expediently adding new features. If you get into the hygienic habit of refactoring continuously, you&amp;apos;ll find that it is easier to extend and maintain code.'&gt;refactor&lt;/abbr&gt;ed to provide greater efficiency and security.&lt;/p&gt;
+
+&lt;h3 id='issue_332__invalid_page_image_report_was_reporting_false_positives'&gt;Issue #332 - Invalid Page Image Report was reporting false positives&lt;/h3&gt;
+
+&lt;p&gt;This report used internally by the CompliSpace Operations Team was delivering false positives. This has been addressed reducing the workload for our Operations Team.&lt;/p&gt;
+
+&lt;h3 id='issue_329_330_331__consolidation_of_link_consistency_reports'&gt;Issue #329, #330 #331 - Consolidation of link consistency reports&lt;/h3&gt;
+
+&lt;p&gt;Individual reports for broken internal links, broken external links and broken download links were being generated for each site and sent to the Operations Team. These reports have been merged into a single report for each site with a much better layout to assist the Operation Team to more efficiently monitor client site consistency.&lt;/p&gt;
+
+&lt;h3 id='issue_339__rebuild_assessment_reports'&gt;Issue #339 - Rebuild assessment reports&lt;/h3&gt;
+
+&lt;p&gt;The assessment report has been rebuilt from the ground up and provides a better format for monitoring completed and outstanding assessments. The report now consists of two parts showing outstanding assessments and those completed since the last report. Each section is broken down to show the user and the tests outstanding or completed along with relevant assignment and completed dates.&lt;/p&gt;
+
+&lt;h3 id='issue_338__rebuilt_backup_scripts'&gt;Issue #338 - Rebuilt backup scripts&lt;/h3&gt;
+
+&lt;p&gt;Backup scripts have been completely re-written and are batched with system load level monitoring. Now each site is batched to run individually and will run in parallel, only spawning new backup tasks when the system load is below ~31.25%. Additionally each task has a positive &lt;a href='http://en.wikipedia.org/wiki/Nice_level'&gt;&amp;#8216;nice&amp;#8217; level&lt;/a&gt; ensuring backups do not over consume processing resources.&lt;/p&gt;
+
+&lt;p&gt;The previous method simply ran a single script that iterated over each site sequentially backing up one after the other. While this was run at around 2am each morning when nobody was using any sites, it consumed a lot of resources and would not sustain future growth.&lt;/p&gt;</description>
+				<link>http://complispace.github.com/update/2011/09/02/September-Migration.html</link>
+				<pubDate>Fri, 02 September 2011 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>Mid August Fundamentals Updates</title>
+				<description>&lt;h2 id='schedule'&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;An update was rolled out on 8th August 2011. There was no disruption to services.&lt;/p&gt;
+
+&lt;h3 id='issue_309__added_better_server_response_codes'&gt;Issue 309 - Added better server response codes&lt;/h3&gt;
+
+&lt;p&gt;Better server response codes for error and authentication states.&lt;/p&gt;
+
+&lt;h3 id='issue_315_and_316__address_potential_security_with_uploaded_files'&gt;Issue 315 and 316 - Address potential security with uploaded files.&lt;/h3&gt;
+
+&lt;p&gt;This has been addressed&lt;/p&gt;
+
+&lt;h3 id='issue_317__allow_shorter_usernames_min_3_characters_for_komodocms_logins'&gt;Issue 317 - Allow shorter usernames (min 3 characters) for KomodoCMS logins&lt;/h3&gt;
+
+&lt;p&gt;User login names can now be 3 characters.&lt;/p&gt;
+
+&lt;h3 id='issue_318__gather_metrics_on_browser_capabilities'&gt;Issue 318 - Gather metrics on browser capabilities&lt;/h3&gt;
+
+&lt;p&gt;Gathering these metrics allows CompliSpace Technology to plan for the best compatibility with the CompliSpace user base.&lt;/p&gt;</description>
+				<link>http://complispace.github.com/update/2011/08/08/Mid-August-Updates.html</link>
+				<pubDate>Mon, 08 August 2011 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>July Fundamentals Updates</title>
+				<description>&lt;h2 id='schedule'&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;July updates will commence from Wednesday 28th July and conclude Monday 1st August. There will be no disruption to services. If a client has unexpected behaviour, be sure to have them &lt;a href='http://www.wikihow.com/Clear-Your-Browser&amp;apos;s-Cache'&gt;clear their cache&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id='change_log'&gt;Change Log&lt;/h2&gt;
+
+&lt;p&gt;This month there are 4 specific issues that will be rolled out.&lt;/p&gt;
+
+&lt;h3 id='feature_178__addition_of_a_markdown_content_type'&gt;Feature 178 - Addition of a Markdown content type&lt;/h3&gt;
+
+&lt;p&gt;A Markdown content type has been added for advanced users. If you would like this feature enabled for your site please contact your sales representative. More information on markdown can be found at &lt;a href='http://daringfireball.net/projects/markdown/'&gt;Daring Fireball&lt;/a&gt;. This CompliSpace implementation uses &lt;a href='http://michelf.com/projects/php-markdown/extra/'&gt;Markdown Extra&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id='issue_282__intermitent_problems_with_compliflow_submission_to_special_group_or_group_member_self'&gt;Issue 282 - Intermitent problems with CompliFlow submission to special group or group member &amp;#8216;Self&amp;#8217;&lt;/h3&gt;
+
+&lt;p&gt;Under some circumstances submissions to &amp;#8216;Self&amp;#8217; were failing. This has been addressed.&lt;/p&gt;
+
+&lt;h3 id='issue_296__html_entity_translation_of__character_failing'&gt;Issue 296 - HTML entity translation of &amp;#8217;&amp;amp;&amp;#8217; character failing&lt;/h3&gt;
+
+&lt;p&gt;Under some circumstances the underlying CMS was not correctly translating the ampersand (&amp;amp;) character to correct HTML encoding (&lt;code&gt;&amp;amp;amp;&lt;/code&gt;). This has been addressed.&lt;/p&gt;
+
+&lt;h3 id='issue_305__carriage_returnsnew_lines_not_being_escaped_in_compliflow_builder'&gt;Issue 305 - Carriage Returns/New Lines not being escaped in CompliFlow Builder&lt;/h3&gt;
+
+&lt;p&gt;Some Windows based CR/LF characters were not being escaped. This has been addressed.&lt;/p&gt;</description>
+				<link>http://complispace.github.com/update/2011/07/27/July-Updates.html</link>
+				<pubDate>Wed, 27 July 2011 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>How To Create a New PDF Using Selected Pages From an Already Existing PDF (using a Mac)</title>
+				<description>&lt;p&gt;Using the Mac OS X built in &lt;mark&gt;Preview&lt;/mark&gt; program, you can easily extract selected pages from a PDF document to create a new document.&lt;/p&gt;
+&lt;iframe width='650' src='http://www.screenr.com/embed/PhSs' height='396' frameborder='0'&gt;
+&lt;/iframe&gt;</description>
+				<link>http://complispace.github.com/article/screen%20cast/2011/07/22/How_To_Extract_PDF_Pages.html</link>
+				<pubDate>Fri, 22 July 2011 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>May Fundamentals Updates</title>
+				<description>&lt;h2 id='schedule'&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;May updates will commence from Tuesday 24th May and conclude Thursday 26th May. There will be no disruption to services. If a client has unexpected behaviour, be sure to have them &lt;a href='http://www.wikihow.com/Clear-Your-Browser&amp;apos;s-Cache'&gt;clear their cache&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id='change_log'&gt;Change Log&lt;/h2&gt;
+
+&lt;p&gt;This month there are 4 specific issues that will be rolled out.&lt;/p&gt;
+
+&lt;h3 id='issue_219__update_to_jquery_152_and_modernizr_17'&gt;Issue 219 - Update to jQuery 1.5.2 and Modernizr 1.7&lt;/h3&gt;
+
+&lt;p&gt;Updating these supporting libraries adds to stability and usability.&lt;/p&gt;
+
+&lt;h3 id='issue_225__improve_cookie_security'&gt;Issue 225 - Improve cookie security&lt;/h3&gt;
+
+&lt;p&gt;Some features of the KomodoCMS that are not used by Fundamentals stored information in cookies. This information has been removed.&lt;/p&gt;
+
+&lt;h3 id='issue_241__it_help_desk_emails_not_being_delivered'&gt;Issue 241 - IT Help Desk Emails not being delivered&lt;/h3&gt;
+
+&lt;p&gt;Under some circumstances IT Help Desk emails were not being delivered. This has now been corrected.&lt;/p&gt;
+
+&lt;h3 id='issue_265__refactor_to_shared_library'&gt;Issue 265 - Refactor to shared library&lt;/h3&gt;
+
+&lt;p&gt;In continuing efforts to improve the Fundamentals program, various components have been refactored from individual site installations to a shared library common to all sites.&lt;/p&gt;</description>
+				<link>http://complispace.github.com/update/2011/05/18/May-Updates.html</link>
+				<pubDate>Wed, 18 May 2011 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>April Fundamentals Updates Complete</title>
+				<description>&lt;h2 id='status'&gt;Status&lt;/h2&gt;
+
+&lt;p&gt;Updates have completed on schedule.&lt;/p&gt;
+
+&lt;h2 id='issues'&gt;Issues&lt;/h2&gt;
+
+&lt;p&gt;Two issues were identified during the update process. Each was corrected within 1 hour of being identified.&lt;/p&gt;</description>
+				<link>http://complispace.github.com/update/2011/05/09/April-Updates-Complete.html</link>
+				<pubDate>Mon, 09 May 2011 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>April Fundamentals Updates</title>
+				<description>&lt;h2 id='schedule'&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;April updates will commence from Tuesday 2nd May and conclude Thursday 6th May. There will be no disruption to services. If a client has unexpected behaviour, be sure to have them &lt;a href='http://www.wikihow.com/Clear-Your-Browser&amp;apos;s-Cache'&gt;clear their cache&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id='change_log'&gt;Change Log&lt;/h2&gt;
+
+&lt;p&gt;This month there are 5 specific issues that will be rolled out.&lt;/p&gt;
+
+&lt;p&gt;Issue #220 provides significant benefits for clients who have other internal systems that they would like to seamlessly link to CompliSpace Fundamentals.&lt;/p&gt;
+
+&lt;h3 id='issue_210__under_certain_conditions_an_error_occurs_when_uploading_a_file'&gt;Issue 210 - Under certain conditions an error occurs when uploading a file&lt;/h3&gt;
+
+&lt;p&gt;After clients have requested or required database rollbacks some sites were not able to upload new files. This has been addressed.&lt;/p&gt;
+
+&lt;h3 id='issue_214__implement_401_and_403_response_headers'&gt;Issue 214 - Implement 401 and 403 response headers&lt;/h3&gt;
+
+&lt;p&gt;Combined with Issue #220, this allows client developed software or integrators to rely on correct header responses when access restricted content.&lt;/p&gt;
+
+&lt;h3 id='issue_229__scheduled_emails_not_being_delivered'&gt;Issue 229 - Scheduled emails not being delivered&lt;/h3&gt;
+
+&lt;p&gt;Under some circumstances scheduled system generated emails were not being sent correctly. This has now been corrected.&lt;/p&gt;
+
+&lt;h3 id='issue_234__assessment_module_not_handling_certain_characters'&gt;Issue 234 - Assessment module not handling certain characters&lt;/h3&gt;
+
+&lt;p&gt;The Assessment Module was not encoding certain characters correctly. This has now been corrected.&lt;/p&gt;
+
+&lt;h3 id='issue_220__infrastructure_to_support_federated_login'&gt;Issue 220 - Infrastructure to support federated login&lt;/h3&gt;
+
+&lt;p&gt;CompliSpace Fundamentals now has the ability to integrate into a private system by using signed referrer links. This is a major milestone in providing better integration with existing systems.&lt;/p&gt;
+
+&lt;p&gt;Full technical details are available on the &lt;a href='ReferredSignIn.html'&gt;Referred Sign In&lt;/a&gt; page that includes links to sample code and an algorithm for generating signed referrer requests.&lt;/p&gt;</description>
+				<link>http://complispace.github.com/update/2011/04/29/April-Updates.html</link>
+				<pubDate>Fri, 29 April 2011 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>March Fundamentals Updates Complete</title>
+				<description>&lt;h2 id='status'&gt;Status&lt;/h2&gt;
+
+&lt;p&gt;Updates have completed on schedule.&lt;/p&gt;</description>
+				<link>http://complispace.github.com/update/2011/03/28/March-Updates-Complete.html</link>
+				<pubDate>Mon, 28 March 2011 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>March Fundamentals Updates - Addendum</title>
+				<description>&lt;h2 id='change_log'&gt;Change Log&lt;/h2&gt;
+
+&lt;p&gt;One more &lt;em&gt;high priority&lt;/em&gt; issue has been added to the &lt;a href='/2011/03/09/March-Updates.html'&gt;update schedule for March 2011&lt;/a&gt;. All other information remains the same.&lt;/p&gt;
+
+&lt;h3 id='issue_209__ie_trying_to_open_office_2007_files_as_zip_files'&gt;Issue 209 - IE trying to open Office 2007 files as zip files&lt;/h3&gt;
+
+&lt;p&gt;Some combinations of Internet Explorer / Windows and various &amp;#8216;updates&amp;#8217; result in Microsoft Internet Explorer trying to open Microsoft Office 2007 and greater documents as &lt;abbr title='The ZIP file format is a data compression and archive format. A ZIP file contains one or more files that have been compressed to reduce file size, or stored as-is. The ZIP file format permits a number of compression algorithms.'&gt;ZIP&lt;/abbr&gt; files. This patch will help Internet Explorer recognise the documents as Office documents and open them in the correct applications.&lt;/p&gt;
+&lt;div class='note clearfix'&gt;
+&lt;div style='float:left'&gt;
+&lt;a href='http://alternativebrowseralliance.com/' title='Promoting Alternative Web Browsers'&gt;
+&lt;img width='110' src='http://st.altbrowser.net/banners/alt-browser-alliance-b-110x32.png' alt='Alternative Browser Alliance' height='32' /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div style='padding-left: 115px'&gt;
+&lt;p&gt;
+It is highly recommended that Internet Explorer users upgrade to a web
+browser that complies better with modern web standards. A list of
+browsers can be found at the &lt;a href='http://alternativebrowseralliance.com/browsers.html'&gt;Alternative
+Browser Alliance&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div style='float: left'&gt;
+&lt;a href='http://www.google.com/chromeframe/index.html'&gt;
+&lt;img width='110' src='http://www.google.com/images/icons/illustrations/chrome_frame-430.png' /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;p&gt;
+If you must use Internet Explorer for compatability with legacy applications, we
+recommend installing the &lt;a href='http://www.google.com/chromeframe/index.html'&gt;Google Chrome Frame plugin&lt;/a&gt;. This will allow
+you to continue using Internet Explorer on you legacy applications,
+while using the Chrome rendering engine on modern sites.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Technically Microsoft Office 2007 and greater files &lt;em&gt;are&lt;/em&gt; &lt;abbr title='The ZIP file format is a data compression and archive format. A ZIP file contains one or more files that have been compressed to reduce file size, or stored as-is. The ZIP file format permits a number of compression algorithms.'&gt;ZIP&lt;/abbr&gt; files - you can change the extension on any of these documents to &lt;code&gt;.zip&lt;/code&gt; and open them to see the contents. It is interesting to note that it is only the Microsoft browser that doesn&amp;#8217;t recognise the files as being Microsoft documents!&lt;/p&gt;</description>
+				<link>http://complispace.github.com/update/2011/03/14/March-Updates-Addendum.html</link>
+				<pubDate>Mon, 14 March 2011 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>March Fundamentals Updates</title>
+				<description>&lt;h2 id='schedule'&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;March rollouts will commence from Tuesday 22nd March and conclude Thursday 24th March. There will be no disruption to services. If a client has unexpected behaviour, be sure to have them &lt;a href='http://www.wikihow.com/Clear-Your-Browser&amp;apos;s-Cache'&gt;clear their cache&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id='change_log'&gt;Change Log&lt;/h2&gt;
+
+&lt;p&gt;This month there are 5 specific issues that will be rolled out.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Update: Issue 209 added to this release. Please see the &lt;a href='/2011/03/14/March-Updates-Addendum.html'&gt;March Fundamentals Updates - Addendum&lt;/a&gt; post for more information. This will make 6 issues in this update.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id='issue_186__form_builder_submission_data_working_as_expected'&gt;Issue 186 - Form Builder Submission Data Working As Expected&lt;/h3&gt;
+
+&lt;p&gt;Under some conditions form builder submissions were not saving to the database. This has been addressed.&lt;/p&gt;
+
+&lt;h3 id='issue_187__compliflow_date_fields_empty_in_form_preview'&gt;Issue 187 - CompliFlow Date Fields Empty In Form Preview&lt;/h3&gt;
+
+&lt;p&gt;Date fields were appearing empty in CompliFlow preview. This was by design as the preview shows what a form looks like once it is complete. Fields display a default value if one is present or empty when none has been supplied. As this was causing confusion with some people, empty date fields now show a place holder when in preview mode.&lt;/p&gt;
+
+&lt;h3 id='issue_193__implement_basic_authentication_rfc_1945_111'&gt;Issue 193 - Implement Basic Authentication (RFC 1945, 11.1)&lt;/h3&gt;
+
+&lt;p&gt;If you wish to develop applications that interact directly with CompliSpace Fundamentals, sending the &lt;a href='http://www.freesoft.org/CIE/RFC/1945/67.htm'&gt;RFC 1945 standard Authentication (basic) headers&lt;/a&gt; with a valid username and password will authenticate correctly.&lt;/p&gt;
+
+&lt;p&gt;This is an initial step in providing further integration into an organisation&amp;#8217;s already existing authentication infrastructure.&lt;/p&gt;
+
+&lt;h3 id='issue_194__add_markdown_as_standard_multipart_for_plain_text_emails'&gt;Issue 194 - Add Markdown As Standard Multipart For Plain Text Emails&lt;/h3&gt;
+
+&lt;p&gt;All email sent through the CompliSpace Fundamentals system that are usually plain text will now be sent in multi-part format. The basic part will still contain the plain text, however the extended part will use &lt;a href='http://daringfireball.net/projects/markdown/'&gt;Markdown&lt;/a&gt; to convert the plain text to a nice HTML format. CompliSpace Fundamentals uses &lt;a href='http://michelf.com/projects/php-markdown/extra/'&gt;Markdown Extra&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;CompliSpace Development is also experimenting with a Markdown &lt;em&gt;content item&lt;/em&gt;. If this is something you would be interested in trying out (Beta stage), please contact &lt;a href='mailto:development@complispace.net'&gt;&amp;#100;&amp;#101;&amp;#118;&amp;#101;&amp;#108;&amp;#111;&amp;#112;&amp;#109;&amp;#101;&amp;#110;&amp;#116;&amp;#064;&amp;#099;&amp;#111;&amp;#109;&amp;#112;&amp;#108;&amp;#105;&amp;#115;&amp;#112;&amp;#097;&amp;#099;&amp;#101;&amp;#046;&amp;#110;&amp;#101;&amp;#116;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id='issue_200__add_export_for_complaints_register'&gt;Issue 200 - Add Export For Complaints Register&lt;/h3&gt;
+
+&lt;p&gt;The complaints manager now has a button labelled &amp;#8216;Export All Complaints&amp;#8217;. This will download a &lt;abbr title='Comma Separated Values'&gt;CSV&lt;/abbr&gt; file for all the complaints in the register. CSV files can be opened in your favourite spread sheet program or processed by your own programs.&lt;/p&gt;</description>
+				<link>http://complispace.github.com/update/2011/03/09/March-Updates.html</link>
+				<pubDate>Wed, 09 March 2011 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>February Fundamentals Updates Complete</title>
+				<description>&lt;h2 id='status'&gt;Status&lt;/h2&gt;
+
+&lt;p&gt;Updates have completed on schedule. One extra update has been included:&lt;/p&gt;
+
+&lt;h2 id='issue_184__protection_of_compliadmin_user'&gt;Issue #184 - Protection of CompliAdmin user&lt;/h2&gt;
+
+&lt;p&gt;Some clients have deleted the CompliAdmin user. This login is used by CompliSpace to update and manage the customer Fundamentals software. Without this user, policies can not be amended or added as appropriate.&lt;/p&gt;
+
+&lt;p&gt;The CompliSpace user can now only be edited or deleted by the CompliSpace Developer.&lt;/p&gt;</description>
+				<link>http://complispace.github.com/update/2011/02/25/February-Updates-Complete.html</link>
+				<pubDate>Fri, 25 February 2011 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>February Fundamentals Updates</title>
+				<description>&lt;h2 id='schedule'&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;February rollouts will commence from Tuesday 22nd February and conclude Thursday 24th February. There will be no disruption to services. If a client has unexpected behaviour, be sure to have them clear their cache.&lt;/p&gt;
+
+&lt;h2 id='change_log'&gt;Change Log&lt;/h2&gt;
+
+&lt;p&gt;This month there are 7 specific issues that will be rolled out, many of which will have no visible impact on customers:&lt;/p&gt;
+
+&lt;h3 id='issue_147__printable_css_for_new_skins'&gt;Issue #147 - Printable CSS for new skins&lt;/h3&gt;
+
+&lt;p&gt;This has already been rolled out as a patch but is included in this release for consistency. When pages are printed the web browser artifacts are removed: only the breadcrumb bar and main content will be printed. There is no header, footer or side navigation bar on printed pages. For page title and page url, these are options when printing and depends on the end users browser and operating system.&lt;/p&gt;
+
+&lt;h3 id='issue_170__complaints_search_dates_were_broken'&gt;Issue #170 - Complaints search dates were broken&lt;/h3&gt;
+
+&lt;p&gt;The date field in the complaints search was completely broken. Obviously this custom app isn&amp;#8217;t being used much since this was found as part of investigating Issue #135.&lt;/p&gt;
+
+&lt;h3 id='issue_169__update_hard_coded_email_addresses_from_komodocmscom_emails_to_appropriate_complispacecom'&gt;Issue #169 - Update hard coded email addresses from @komodocms.com emails to appropriate @complispace.com&lt;/h3&gt;
+
+&lt;p&gt;There were numerous hard coded email addresses throughout the core Komodo CMS code sending of various error reporting information to Komosion. This has now been altered to send to the appropriate development email addresses.&lt;/p&gt;
+
+&lt;h3 id='issue_167__update_hard_coded_email_addresses_from_supportcomplicomau_to_helpdeskcomplispacecom'&gt;Issue #167 - Update hard coded email addresses from support@compli.com.au to helpdesk@complispace.com&lt;/h3&gt;
+
+&lt;p&gt;Various places in the custom application had hard coded emails being sent to a deprecated ComlpiSpace domain. This is now being sent to helpdesk@complispace.com.&lt;/p&gt;
+
+&lt;h3 id='issue_151__corrupt_or_password_protected_pdf_files_cant_be_indexed_during_publishing'&gt;Issue #151 - Corrupt or password protected &lt;abbr title='Portable Document Format'&gt;PDF&lt;/abbr&gt; files can&amp;#8217;t be indexed during publishing&lt;/h3&gt;
+
+&lt;p&gt;This has applied to corrupted &lt;abbr title='Portable Document Format'&gt;PDF&lt;/abbr&gt; files in the past, but there has been an increase in clients using password protected PDF&amp;#8217;s or documents that contain security plugins and hence non-standard &lt;abbr title='Portable Document Format'&gt;PDF&lt;/abbr&gt; files. This was breaking during publishing as the Komodo CMS could not extract the text for indexing. This has now been changed to fail silently. Pages will now publish, however the content of the PDF files will not be searchable.&lt;/p&gt;
+
+&lt;h3 id='issue_144__hiding_subscribed_to_mailing_list_in_all_sites'&gt;Issue #144 - &amp;#8216;Hiding&amp;#8217; Subscribed to Mailing List in all sites&lt;/h3&gt;
+
+&lt;p&gt;The user details screen available to administrators (Komodo Bar-&amp;gt;User-&amp;gt;Search-&amp;gt;&lt;em&gt;find user&lt;/em&gt;-&amp;gt;Details) had a field for subscribing to the mailing list. This is something used by Komosion on their own hosted websites. This data was stored in the database but not accessible by Komosion. It is not used by CompliSpace so it is now hidden to avoid confusion. The code is still there in case we want it for future use.&lt;/p&gt;
+
+&lt;h3 id='issue_165__implement_prompt_for_chrome_frame'&gt;Issue #165 - Implement prompt for Chrome Frame&lt;/h3&gt;
+
+&lt;p&gt;To enhance compatibility, end users with internet explorer that do not already have Google Chrome Frame plugin installed will be prompted to install &lt;abbr title='Google Chrome Frame'&gt;GCF&lt;/abbr&gt;. A small bar appears above the site advising them to install the plugin. It includes links/buttons to install the plugin, more information (link to a &lt;a href='http://www.youtube.com/watch?v=sjW0Bchdj-w'&gt;Google YouTube&lt;/a&gt; video explaining what it is) and a cancel button that hides the information bar. The information bar will appear again in the next browser session if they have not already installed &lt;abbr title='Google Chrome Frame'&gt;GCF&lt;/abbr&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Big thanks to Tracy and Ellen for their feedback on this issue!&lt;/em&gt; ￼ &lt;img src='/images/gcf-preview.png' alt='Google Chrome Frame Installer Preview' /&gt;&lt;/p&gt;</description>
+				<link>http://complispace.github.com/update/2011/02/11/February-Updates.html</link>
+				<pubDate>Fri, 11 February 2011 09:00:00 GMT+10</pubDate>
+			</item>
+		
+			<item>
+				<title>Establishing Presence</title>
+				<description>&lt;em&gt;&lt;time datetime='2011-02-05' pubdate='pubdate'&gt;Posted on 05 February 2011&lt;/time&gt;&lt;/em&gt;
+&lt;p&gt;CompliSpace Development is in the process of establishing it&amp;#8217;s &lt;a href='https://github.com/complispace'&gt;presence on GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This blog will be a fairly informal place for CompliSpace Development to interact with the outside world! The CompliSpace product is primarily focussed on delivering great organisational content and it does so well. The sales team can easily show you how great the product is. However this content is delivered using &lt;em&gt;technology&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here is where you can pull back the curtain and get a glimpse into the busy development world at CompliSpace.&lt;/p&gt;
+
+&lt;p&gt;If you need technical support, please contact the help desk by calling &lt;strong&gt;+61 2 9299 6105&lt;/strong&gt; or sending an email to &lt;a href='mailto:contactus@complispace.com.au'&gt;&amp;#099;&amp;#111;&amp;#110;&amp;#116;&amp;#097;&amp;#099;&amp;#116;&amp;#117;&amp;#115;&amp;#064;&amp;#099;&amp;#111;&amp;#109;&amp;#112;&amp;#108;&amp;#105;&amp;#115;&amp;#112;&amp;#097;&amp;#099;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&amp;#046;&amp;#097;&amp;#117;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You can contact CompliSpace Development through email: &lt;a href='mailto:development@complispace.net'&gt;&amp;#100;&amp;#101;&amp;#118;&amp;#101;&amp;#108;&amp;#111;&amp;#112;&amp;#109;&amp;#101;&amp;#110;&amp;#116;&amp;#064;&amp;#099;&amp;#111;&amp;#109;&amp;#112;&amp;#108;&amp;#105;&amp;#115;&amp;#112;&amp;#097;&amp;#099;&amp;#101;&amp;#046;&amp;#110;&amp;#101;&amp;#116;&lt;/a&gt;&lt;/p&gt;</description>
+				<link>http://complispace.github.com/article/2011/02/05/Establishing-Presence.html</link>
+				<pubDate>Sat, 05 February 2011 09:00:00 GMT+10</pubDate>
+			</item>
+		
+	</channel>
+</rss>

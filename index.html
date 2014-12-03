@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Overview of Single Sign On (SSO) Methods - CompliSpace Developer Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="@AlchemyCS <https://github.com/alchemycs>" />
+    <meta name="description" content="CompliSpace Technology Developer Blog" />
+    <meta name="google-site-verification" content="ev8un4h3Ma9ur_slllwMdjTgznoE7MRbZy_-OpjWMpc" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <!-- Le styles -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+    </style>
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="http://coderwall.com/stylesheets/jquery.coderwall.css" media="all" rel="stylesheet" type="text/css">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        
+    <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/blog-feed.xml">    
+    <link rel="author" href="/humans.txt" />
+    
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">CompliSpace Developer Blog</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+<!--                <li class=""><a href="/index.html" title="View the 5 most recent posts">Recent Posts</a></li>
+                <li><a href="/Archives.html" title="View a list of all the CompliSpace Developer posts">All Posts</a></li>-->
+                <!--<li><a href="http://q2a.complispace.net/" target="q2a" title="Ask questions about the CompliSpace Fundamentals program and receive answers from CompliSpace staff and other expert users">Q <sub>2</sub> A</a></li>-->
+                <!--                    <li><a href="/blog-feed.xml">RSS Feed</a></li>-->
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+<!--          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">Previous Posts</li>
+                
+                <li>
+                <a href="/update/2013/10/09/September-Updates.html">September Fundamentals Updates</a> - <em><time datetime="2013-10-09" pubdate>Posted on 09 Oct 2013</time></em>
+                </li>
+                
+                <li>
+                <a href="/update/2013/08/27/August-Updates.html">August Fundamentals Updates</a> - <em><time datetime="2013-08-27" pubdate>Posted on 27 Aug 2013</time></em>
+                </li>
+                
+                <li>
+                <a href="/update/2013/07/31/June-Updates.html">June Fundamentals Updates</a> - <em><time datetime="2013-07-31" pubdate>Posted on 31 Jul 2013</time></em>
+                </li>
+                
+                <li>
+                <a href="/update/2013/05/17/May-Updates.html">May Fundamentals Updates</a> - <em><time datetime="2013-05-17" pubdate>Posted on 17 May 2013</time></em>
+                </li>
+                
+                <li>
+                <a href="/article/2012/12/14/Browser-Support-For-2013.html">Browser Support For 2013</a> - <em><time datetime="2012-12-14" pubdate>Posted on 14 Dec 2012</time></em>
+                </li>
+                            
+            </ul>
+          </div>-->
+            <!--/.well -->
+          <div class="well sidebar-nav">
+              <ul class="nav nav-list">
+                  <li class="nav-header">Important Information</li>
+                  <li><a href="/SSO-For-CompliSpace-Fundamentals.html">Using SAML 2.0 for SSO</a></li>
+                  <li><a href="/ReferredSignIn.html">Using Referred Signin for SSO</a></li>
+                  <li><a href="/article/2012/12/14/Browser-Support-For-2013.html">Browser Support For 2013</a></li>
+                  <li><a href="/article/2011/11/29/Fundamentals-Supported-File-Types.html">Supported File Types</a></li>
+                  <!--<li><a href="/article/2011/11/10/Community-Questions-And-Answers.html">Community Driven "Questions To Answers"</a></li>-->
+                  <li><a href="/article/2012/08/01/Receive-Emails-From-CompliSpace-Fundamentals.html">Receive Emails From CompliSpace Fundamentals</a></li>
+              </ul>
+          </div>
+          <div class="well sidebar-nav">
+              <ul class="nav nav-list">
+                  <li class="nav-header">Interesting Links</li>
+                  <li><a href="http://gamejolt.com/profile/michael-mchugh/292948/">Games</a> - Games written by the CompliSpace CTO</li>
+                  <li><a href="http://www.watersideresortpranburi.com/">Waterside Resort</a> - Resort in Thailand run by the CTO's family</li>
+                  <li><a href="http://www.earthexplorer.info">Earth Explorer</a> - Explore the world</li>
+                  <li><a href="http://ivory-breeze.herokuapp.com">Ivory Breeze</a> - Extract keywords and locations from text and websites</li>
+                  
+              </ul>
+          </div>
+          <hr/>
+          <section class="coderwall" data-coderwall-username="alchemycs" data-coderwall-orientation="horizontal"></section>
+        </div><!--/span-->
+        <div class="span9">
+          <div class="hero-unit hidden">
+            <h1>CompliSpace Technology</h1>
+            <p>A place for CompliSpace Technology.</p>
+            <p><a class="btn btn-primary btn-large" href="http://www.complispace.com.au">Learn more &raquo;</a></p>
+          </div>
+          <div class="row-fluid">
+            <div class="span12">
+
+                
+<h1>Overview of Single Sign On (SSO) Methods</h1>  
+<!--
+<article>
+<h1><a href="/update/2013/10/09/September-Updates.html">September Fundamentals Updates</a></h1>
+<em><time datetime="2013-10-09" pubdate>Posted on 09 October 2013</time></em>
+<h2 id='schedule'>Schedule</h2>
+
+<p>September updates are scheduled to take place on Thursday 17th October with no disruption to services expected. If a client has unusual behaviour, be sure to have them <a href='http://www.wikihow.com/Clear-Your-Browser&apos;s-Cache'>clear their cache</a>.</p>
+
+<h2 id='change_log'>Change Log</h2>
+
+<p>The Developers have been working hard to bring you new features and <em>lots</em> of bug fixes!</p>
+
+<p>We&#8217;ve also moved to using Jira by Atlassian for our issue tracking so you will notice some differences in the issue id format.</p>
+
+<p>The volume of issues we are addressing makes it impractical for us to list each one, so instead we will now list only the &#8220;Big Ticket&#8221; things.</p>
+
+<h3 id='fm41_project_blue_beard'>FM-41 Project Blue Beard</h3>
+
+<p>To cut a long story short, the Fundamentals code was forked away from Komodo CMS years ago. We&#8217;ve been providing our own enhancements and bug fixes and heading in a different direction. While the original Komodo CMS is designed for public web sites, Fundamentals requires strict security and specialised functionality. To avoid confusion, we have updated a lot of references so you know the software you are using is maintained and secured by CompliSpace Technology.</p>
+
+<h3 id='fm8_simplified_permissions'>FM-8 Simplified Permissions</h3>
+
+<p>The permission system is quite complicated for every day use. We&#8217;re streamlining this to allow a user to have a simple read or write privilege on each section while hiding away the underlying complexities.</p>
+
+<h3 id='fm16_improve_wording_of_compliflow_emails_when_assigned_back_to_the_previous_stage'>FM-16 Improve wording of CompliFlow emails when assigned back to the previous stage</h3>
+
+<h3 id='fm29_provide_an_error_message_when_attempting_to_select_assets_from_other_sections'>FM-29 Provide an error message when attempting to select assets from other sections</h3>
+
+<h3 id='fm30_if_a_download_link_is_not_accessible_a_visual_indicator_is_shown'>FM-30 If a download link is not accessible, a visual indicator is shown</h3>
+
+<h3 id='fm50_include_a_date_received_as_part_of_the_complaints_register'>FM-50 Include a &#8216;date received&#8217; as part of the complaints register</h3>
+<hr/>
+</article>
+
+<article>
+<h1><a href="/update/2013/08/27/August-Updates.html">August Fundamentals Updates</a></h1>
+<em><time datetime="2013-08-27" pubdate>Posted on 27 August 2013</time></em>
+<h2 id='schedule'>Schedule</h2>
+
+<p>August updates are scheduled to take place on Thursday 4th September with no disruption to services expected. If a client has unusual behaviour, be sure to have them <a href='http://www.wikihow.com/Clear-Your-Browser&apos;s-Cache'>clear their cache</a>.</p>
+
+<h2 id='change_log'>Change Log</h2>
+
+<p>This release includes 10 specific issues that affect end users.</p>
+
+<h3 id='issue900_faster_sitemap_loading'>Issue-900: Faster Sitemap Loading</h3>
+
+<p>Optimisations to backend code result in sitemaps loading faster.</p>
+
+<h3 id='issue895_anchor_tags_available_to_content_items'>Issue-895: Anchor Tags Available to Content Items</h3>
+
+<p>You can now easily add anchor tags to jump between different sections of content on a page.</p>
+
+<h3 id='issue894_assessment_emails_linking_to_training'>Issue-894: Assessment Emails Linking To Training</h3>
+
+<p>Assessments can now be configured so test emails include a link to the relevant training.</p>
+
+<h3 id='issue889_due_date_on_assessments'>Issue-889: Due Date on Assessments</h3>
+
+<p>Assessments can now be configured with a due date. This is used by the assessment report.</p>
+
+<h3 id='issue888_required_questions'>Issue-888: Required Questions</h3>
+
+<p>Questions in assessments can now be marked as &#8216;required&#8217;. This results in an automatic <em>fail</em> if this required questions are incorrect.</p>
+
+<h3 id='issue887_incomplete_tests_view'>Issue-887: Incomplete Tests View</h3>
+
+<p>A view is now available that show incomplete tests.</p>
+
+<h3 id='issue884_publishing_report_sorted_by_date'>Issue-884: Publishing Report Sorted By Date</h3>
+
+<p>The publishing report is now easier to view chronologically.</p>
+
+<h3 id='issue880_bulk_user_upload_staff_directory_position'>Issue-880: Bulk User Upload Staff Directory Position</h3>
+
+<p>The staff directory was not updating the persons position during a bulk upload. This is now fixed.</p>
+
+<h3 id='issue872_improve_visual_accessibility'>Issue-872: Improve Visual Accessibility</h3>
+
+<p>Changes to colours and patterns improve accessibility.</p>
+
+<h3 id='issue856_user_privileges_report'>Issue-856: User Privileges Report</h3>
+
+<p>Administrators can now export a CSV file reporting the privileges of users.</p>
+<hr/>
+</article>
+
+<article>
+<h1><a href="/update/2013/07/31/June-Updates.html">June Fundamentals Updates</a></h1>
+<em><time datetime="2013-07-31" pubdate>Posted on 31 July 2013</time></em>
+<h2 id='introduction'>Introduction</h2>
+
+<p>June updates, if a client has unusual behaviour, be sure to have them <a href='http://www.wikihow.com/Clear-Your-Browser&apos;s-Cache'>clear their cache</a>.</p>
+
+<h2 id='change_log'>Change Log</h2>
+
+<p>This month there are 16 specific issues.</p>
+
+<h3 id='issue863_reduce_http_requests'>Issue-863: Reduce HTTP Requests</h3>
+
+<p>Client side code has been refactored to reduce the number and size of HTTP requests. This means a faster loading experience.</p>
+
+<h3 id='issue861_excel_template_documents'>Issue-861: Excel Template Documents</h3>
+
+<p>Microsoft Excel Template Documents are supported.</p>
+
+<h3 id='issue859_fixed_the_confusion_around_the_user_active_status'>Issue-859: Fixed the Confusion Around the User &#8216;Active&#8217; Status</h3>
+
+<p>There were two kinds of &#8216;active&#8217; status for users, the functionality has been merged into a single state.</p>
+
+<h3 id='issue858_hazard_register_terminology'>Issue-858: Hazard Register Terminology</h3>
+
+<p>Terminology has been standardised.</p>
+
+<h3 id='issue852_navigation_buttons_not_showing'>Issue-852: Navigation Buttons Not Showing</h3>
+
+<p>In some instances navigation buttons were not showing correctly. This has been resolved</p>
+
+<h3 id='issue840_unable_to_assign_compliflow_forms_on_mobile_devices'>Issue-840: Unable to Assign CompliFlow Forms on Mobile Devices</h3>
+
+<p>Now works as expected on mobile devices.</p>
+
+<h3 id='issue838_tables_not_pasting_correctly'>Issue-838: Tables Not Pasting Correctly</h3>
+
+<p>In some circumstances tables were not pasting correctly. This has been resolved.</p>
+
+<p>Please note: CompliSpace Technology discourages the use of tables. If you use them your content will not display correctly on mobile devices.</p>
+
+<h3 id='issue832_archive_page_interface'>Issue-832: Archive Page Interface</h3>
+
+<p>The interface to the archive pages has been improved.</p>
+
+<h3 id='issue817_default_file_library_section'>Issue-817: Default File Library Section</h3>
+
+<p>The default section for the file library is now &#8216;Public&#8217;. Note that &#8216;Public&#8217; means available to all your users. The section &#8216;Global&#8217; means available to all users on the Internet. You can now enter an incident up to five years old.</p>
+
+<h3 id='issue815_file_library_fake_path_fixed'>Issue-815: File Library &#8216;Fake Path&#8217; Fixed</h3>
+
+<p>For security, modern browsers in windows often replace the path on your hard drive with &#8216;c:\fakepath&#8217;. We now detect this and try to make the path easier to read. General internal code improvements</p>
+
+<h3 id='issue804_merge_field_usage'>Issue-804: Merge Field Usage</h3>
+
+<p>Information about merge field usage is now available.</p>
+
+<h3 id='issue781_removal_of_spell_check_tool'>Issue-781: Removal of Spell Check Tool</h3>
+
+<p>Modern browsers now support spell checking in input fields and reference your local language and dictionary settings. This is now used in favour of the outdated Komodo spell check library.</p>
+
+<h3 id='issue775_improved_functionality_in_compliflow_for_forms_assigned_to_deleted_users'>Issue-775: Improved Functionality in CompliFlow for Forms Assigned to Deleted Users</h3>
+
+<p>Improved Functionality in CompliFlow for Forms Assigned to Deleted Users.</p>
+
+<h3 id='issue699_unable_to_edit_tables'>Issue-699: Unable to Edit Tables</h3>
+
+<p>In some circumstances tables could not be edited. This has been resolved.</p>
+
+<p>Please note: CompliSpace Technology discourages the use of tables. If you use them your content will not display correctly on mobile devices.</p>
+<hr/>
+</article>
+
+<article>
+<h1><a href="/update/2013/05/17/May-Updates.html">May Fundamentals Updates</a></h1>
+<em><time datetime="2013-05-17" pubdate>Posted on 17 May 2013</time></em>
+<h2 id='introduction'>Introduction</h2>
+
+<p>It&#8217;s been a while since we rolled out updates for Fundamentals, but we&#8217;ve been busy working away in the background building new products, preparing major upgrades to our infrastructure and of course improving Fundamentals.</p>
+
+<h2 id='schedule'>Schedule</h2>
+
+<p>May updates are scheduled to take place on Thursday 23rd May with no disruption to services expected. If a client has unusual behaviour, be sure to have them <a href='http://www.wikihow.com/Clear-Your-Browser&apos;s-Cache'>clear their cache</a>.</p>
+
+<h2 id='change_log'>Change Log</h2>
+
+<p>This month there are 18 specific issues.</p>
+
+<h3 id='issue603649_improved_logging_for_complispace_staff'>Issue-603/649: Improved Logging For CompliSpace Staff</h3>
+
+<p>Logging has been improved for internal CompliSpace management software (TOLTOOL)</p>
+
+<h3 id='issue669_moving_files_in_the_file_library'>Issue-669: Moving Files In The File Library</h3>
+
+<p>At long last you can now move files around in the file library.</p>
+
+<h3 id='issue715_staff_directory_photo_cropping'>Issue-715: Staff Directory Photo Cropping</h3>
+
+<p>Fixed to support Internet Explorer 9/10. Other browsers still just work as expected. CompliSpace Technology discourages the use of Internet Explorer.</p>
+
+<h3 id='issue731_submission_date_on_compliflow_forms'>Issue-731: Submission Date On CompliFlow Forms</h3>
+
+<p>CompliFlow forms now show the submission date on forms.</p>
+
+<h3 id='issue733_removed_display_of_draft_pages_from_left_navigation'>Issue-733: Removed Display Of Draft Pages From Left Navigation</h3>
+
+<p>In some instances draft pages were being displayed in the left navigation menu. This has been corrected.</p>
+
+<h3 id='issue736_file_names_with_semicolons'>Issue-736: File Names With Semicolons</h3>
+
+<p>File names that include a semicolon can now be uploaded into the file library.</p>
+
+<h3 id='issue746_internal_sitemap_issue_resolved'>Issue-746: Internal Sitemap Issue Resolved</h3>
+
+<p>A sitemap issue on internal tools has been resolved.</p>
+
+<h3 id='issue751_implemented_feature_request_for_pass_marks'>Issue-751: Implemented Feature Request For Pass Marks</h3>
+
+<p>Tests can now be assigned a pass mark. Failing a test causes the test to be reassigned.</p>
+
+<h3 id='issue753_incidentinjury_form_year_selection'>Issue-753: Incident/Injury Form Year Selection</h3>
+
+<p>You can now enter an incident up to five years old.</p>
+
+<h3 id='issue760_improved_code'>Issue-760: Improved Code</h3>
+
+<p>General internal code improvements</p>
+
+<h3 id='issue776_cancel_login_redirects_on_home_page'>Issue-776: Cancel login redirects on home page</h3>
+
+<p>Placing a login panel on the home page resulted in a redirect. This has been addressed.</p>
+
+<h3 id='issue788_improvement_to_internal_sitemap_tools'>Issue-788: Improvement To Internal Sitemap Tools</h3>
+
+<p>Internal issue with TOLTOOL</p>
+
+<h3 id='issue790_file_library_section_deletions'>Issue-790: File Library Section Deletions</h3>
+
+<p>In some circumstances duplicate sections were created in the file library and couldn&#8217;t be deleted. This has been addressed.</p>
+
+<h3 id='issue792_firefox_printing_only_one_page'>Issue-792: Firefox Printing Only One Page</h3>
+
+<p>CSS has been updated to ensure newer firefox prints all pages.</p>
+
+<h3 id='issue793_content_item_bug'>Issue-793: Content Item Bug</h3>
+
+<p>In some cases certain content items were not opening correctly for editing. This has been addressed.</p>
+
+<h3 id='issue796_added_login_panel_to_archive_pages'>Issue-796: Added Login Panel to Archive Pages</h3>
+
+<p>Previously trying to access archive pages without being logged in would result in a &#8216;forbidden&#8217; error. Now users are presented with a login panel.</p>
+
+<h3 id='issue818_compliflow_not_working_on_ie_910'>Issue-818: CompliFlow Not Working On IE 9/10</h3>
+
+<p>Internet Explorer 9/10 has a bug where it doesn&#8217;t correctly handle certain characters in form field names. We have made a work around until Microsoft fix this bug. Don&#8217;t hold your breath.</p>
+<hr/>
+</article>
+
+<article>
+<h1><a href="/article/2012/12/14/Browser-Support-For-2013.html">Browser Support For 2013</a></h1>
+<em><time datetime="2012-12-14" pubdate>Posted on 14 December 2012</time></em>
+<h2 id='welcome_html5'>Welcome HTML5!</h2>
+
+<p>CompliSpace Technology will be very busy in 2013 with big plans for extending the existing Fundamentals platform, as well as creating a few more products!</p>
+
+<p>As I&#8217;m sure you are aware, the Internet and web technology are continually growing and maturing. Of particular interest is the maturity of <a href='http://en.wikipedia.org/wiki/Web_standards'>web standards</a>.</p>
+
+<p>To ensure that CompliSpace positively contributes to good net citizenship and so we can deliver first class software, we will no longer be supporting older versions of web browsers that don&#8217;t comply with modern standards as set out by the <a href='http://en.wikipedia.org/wiki/WHATWG'>Web Hypertext Application Technology Working Group</a> (WHATWG).</p>
+<img style='width:400px; float:right; margin-top:1em;' src='https://developer.mozilla.org/files/563/Moz_ffx_openStandards_800x600.jpg' class='thumbnail' alt='' />
+<h2 id='supported_browsers'>Supported Browsers</h2>
+
+<p>The list below shows the browsers that we will be officially supporting from January 2013. Older versions may work for you, but we will be unable to assist with any problems you may have while using unsupported browsers.</p>
+
+<ul>
+<li><a href='https://www.google.com/intl/en/chrome/browser/'>Google Chrome</a> &gt; 21</li>
+
+<li><a href='http://www.mozilla.org/en-US/firefox/new/'>Mozilla Firefox</a> &gt; 15</li>
+
+<li><a href='http://www.apple.com/safari/'>Apple Safari</a> &gt; 4</li>
+
+<li><a href='http://www.opera.com/'>Opera</a> &gt; 10</li>
+
+<li><a href='http://windows.microsoft.com/en-AU/internet-explorer/download-ie'>Internet Explorer</a> &gt;= 8 (does not include Windows XP or older)</li>
+</ul>
+
+<h2 id='internet_explorer'>Internet Explorer</h2>
+
+<p>While version 8 of Internet Explorer is quite old, we recognise that many businesses have legacy applications that require older browsers such as IE 8.</p>
+
+<p>If you must use Internet Explorer, we recommend that you always use the most recent version and to install the <a href='http://www.google.com/chromeframe'>Google Chrome Frame plugin</a>. This plugin doesn&#8217;t replace your browser, it just provides an improved way of displaying pages for sites that support the plugin, such as CompliSpace Fundamentals.</p>
+
+<h2 id='windows_xp'>Windows XP</h2>
+
+<p>From January 2013 we will no longer provide support for any version of Internet Explorer running on Windows XP.</p>
+
+<p>Windows XP was released 11 years ago and reached the <a href='http://windows.microsoft.com/en-us/windows/products/lifecycle#section_2'>end of its mainstream support</a> from Microsoft in April 2009. In an effort by Microsoft to move people away from their old operating system and purchase a more modern version of Windows they have built Internet Explorer version 9 and above to require Windows Vista or later.</p>
+
+<p>Fortunately for those who still use Windows XP, the other browser vendors do allow their browsers to work on Windows XP. If you are using Windows XP, we recommend you use one of the other browsers.</p>
+<hr/>
+</article>
+-->
+
+<br/>
+
+<h1>SSO Integration</h1>
+<p>
+    Single Sign-On (SSO) is a method of access control of multiple related, but 
+    independent software systems. With this method a user logs in once and gains 
+    access to all systems without being prompted to log in again at each of them.
+</p>
+<p>
+    It is important to note that while SSO once implemented is incredibly easy
+    for end users, it is very complicated for technical staff to implement and
+    requires high levels of resources and knowledge.
+</p>
+<p>
+    CompliSpace Fundamentals supports two methods of SSO suitable to different
+    needs and in-house skill sets available for implementation.
+</p>
+<h2>SSO Using SAML 2.0</h2>
+<p>
+    CompliSpace supports the <a href="https://wiki.oasis-open.org/security/FrontPage">SAML 2.0 protocol</a>.
+</p>
+<div class="alert alert-info">
+    CompliSpace Technology supports this single sign-on experience as the integration 
+    of a SAML 2.0 compliant Identity Provider (IdP) you have already installed and made operational. 
+    CompliSpace Technology will do it's best to provide support with the SAML protocol, however 
+    your Identity Provider (IdP) is a third-party product and therefore CompliSpace Technology
+    does not provide detailed support for the deployment, configuration, troubleshooting, best practices, etc. 
+    Issues and questions regarding your Identity Provider (IdP) should be directed to
+    your vendor.
+</div>
+<p>
+    CompliSpace Technology recommends that you engage <a href="http://studentnet.net/">Student Net</a>
+    for your identity requirements.
+</p>
+<div class="alert alert-danger">
+    If you do not already have extensive experience with implementing and
+    configuring SAML 2.0 Identity Providers, CompliSpace Technology 
+    <b>highly</b> recommends against doing this your self.
+</div>
+<p>
+    For those using Microsoft products, ADFS provides some level of SAML support.
+</p>
+<div class="alert">
+    It has been our experience that many Microsoft Certified Partners have no
+    more than an 'able to install the software' level of knowledge when it comes
+    to SAML integration and struggle when it comes to actual implementation.
+</div>
+<p>
+    Integrating with CompliSpace Fundamentals using SAML 2.0 allows your directory
+    to tell CompliSpace details about the user such as name and email address. It
+    also has the advantage that access permissions in Fundamentals are controlled
+    by your directory, allowing a single 'source of truth' without having to manage
+    permissions separately inside Fundamentals.
+</p>
+<h3>More Information on SAML 2.0 Integration</h3>
+<ul>
+    <li><a href="http://studentnet.net">StudentNet</a></li>
+    <li><a href="/SSO-For-CompliSpace-Fundamentals.html">SSO For CompliSpace Fundamentals</a></li>
+    <li><a href="https://www.microsoft.com/learning/en-us/course.aspx?id=50412b">Microsoft Learning - Implementing Active Directory Federation Services 2.0</a></li>
+    <li><a href="https://gist.github.com/alchemycs/1c0f72f2cc59ec84def1">ADFS Claim Rules</a>. These work with our ADFS testing server. Your mileage may vary.</li>
+</ul>
+
+<h2>SSO Using Referred Sign In</h2>
+<p>
+    CompliSpace Fundamentals supports a mechanism where a URL to Fundamentals 
+    can be signed by a trusted source. The signature includes the user that is to
+    be signed in along with an expiration that can be no more than 6 hours.
+</p>
+<div class="alert alert-success">
+    If you are familiar with how AWS signs access to S3 objects you will feel at home!
+</div>
+<p>
+    This method is good when you don't want to invest in the infrastructure of
+    identity management, but already have a small portal or web page (often an intranet)
+    where your users have already authenticated.
+</p>
+<p>
+    Referred sign in allows your portal page to create a unique link for each user
+    such that when they follow it to Fundamentals they will be logged in automatically.
+</p>
+<div class="alert">
+    <p>
+        You must have server side web programming skills and access to 
+        your portal's server side scripting to implement Referred Sign In. 
+    </p>
+    <p>
+        You should be familiar with concepts such as HMAC, SHA and BASE64 encoding.
+    </p>
+</div>
+<h3>More Information on Referred Sign In</h3>
+<ul>
+    <li><a href="/ReferredSignIn.html">Referred Sign In Algorithm</a></li>
+    <li><a href="https://gist.github.com/907000">Sample Code (PHP, NodeJS, C#, Python)</a></li>
+</ul>
+<h2>Feature Matrix</h2>
+<table class="table table-bordered table-striped">
+    <tr>
+        <th>Method</th>
+        <th>Skills</th>
+        <th>Implementation Skill</th>
+        <th>Single Source for Users and Permissions</th>
+        <th>3rd Party Integration</th>
+        <th>Prerequisites</th>
+    </tr>
+    <tr>
+        <td>SAML 2.0</td>
+        <td>Able to install and configure a SAML 2.0 IdP</td>
+        <td>Experienced SAML Administrator</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>
+            <ul>
+                <li>Working SAML 2.0 IdP</li>
+                <li>Systems Administrator with SAML knowledge</li>
+            </ul>
+            
+        </td>
+    </tr>
+    <tr>
+        <td>Referred Sign In</td>
+        <td>Able to program server side web scripts</td>
+        <td>Developer with medium crypto skills</td>
+        <td>No</td>
+        <td>No</td>
+        <td>
+            <ul>
+                <li>Existing portal that can validate users</li>
+                <li>Access to your portal's back end code</li>
+                <li>Developer with basic crypto knowledge</li>
+            </ul>
+            
+        </td>
+    </tr>
+</table>
+
+
+
+            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+    <footer >
+        <div class="row-fluid">
+            <div class="span4">
+                <ul class="unstyled">
+    <!--                    <li><a href="http://twitter.com/CompliSpace/"><img src="/images/sm/twitter.png"/> Twitter</a></li>-->
+                    <li><a href="http://twitter.com/AlchemyCS/"><img src="/images/sm/twitter.png" alt="Twitter:"/> @AlchemyCS</a></li>
+    <!--                    <li><a href="http://complispace.wordpress.com/"><img src="/images/sm/wordpress-blue.png"/> Wordpress</a></li>-->
+    <!--                    <li><a href="http://www.linkedin.com/company/494386"><img src="/images/sm/linkedin.png"/> LinkedIN</a></li>-->
+                    <li><a href="http://www.linkedin.com/in/mrmchugh"><img src="/images/sm/linkedin.png" alt="LinkedIN: "/> LinkedIN</a></li>
+                    <li><a href="mailto:&#100;&#101;&#118;&#101;&#108;&#111;&#112;&#101;&#114;&#064;&#099;&#111;&#109;&#112;&#108;&#105;&#115;&#112;&#097;&#099;&#101;&#046;&#110;&#101;&#116;"><img src="/images/sm/email.png" alt="email: " >&#100;&#101;&#118;&#101;&#108;&#111;&#112;&#101;&#114;&#064;&#099;&#111;&#109;&#112;&#108;&#105;&#115;&#112;&#097;&#099;&#101;&#046;&#110;&#101;&#116;</a></li>
+                </ul>
+            </div>
+            <div class="span4" style="">            
+                <address>
+                    <strong>Sydney</strong><br/>
+                    Level 1<br/>
+                    191 Clarence Street<br/>
+                    Sydney NSW 2000<br/>
+                    <br/>
+                    t: +61 2 9299 6105<br/>
+                    f: +61 2 9299 2805
+                </address>
+            </div>
+            <div class="span4" style="">
+                <address>
+                    <strong>Perth</strong><br/>
+                    Level 18, Central Park<br/>
+                    152-158 St Georges Terrace<br/>
+                    Perth WA 6000<br/>
+                    <br/>
+                    t: +61 8 9288 1826<br/>
+                    f: +61 8 9288 1827
+                </address>
+            </div>
+        </div>
+    </footer>
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/libs/jquery-1.7.2.min.js"></script>
+    <script src="/js/libs/bootstrap.min.js"></script>
+
+    <!-- scripts concatenated and minified via build script -->
+    <script  src="/js/plugins.js"></script>
+    <script  src="/js/script.js"></script>
+    <script src="http://coderwall.com/javascripts/jquery.coderwall.js"></script>    
+    <!-- end scripts -->
+
+    <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+       mathiasbynens.be/notes/async-analytics-snippet -->
+    <script>
+    var _gaq=[['_setAccount','UA-21489748-1'],['_trackPageview'],['_trackPageLoadTime']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    
+    <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+    <!--[if lt IE 7 ]>
+    <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+    <![endif]-->
+
+
+  </body>
+</html>
